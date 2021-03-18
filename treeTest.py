@@ -46,10 +46,10 @@ class Node:
 with recursionlimit(1000000000):
     print(sys.getrecursionlimit())
 
-    root = Node(100000)
-    for i in range(1, 100000):
+    root = Node(1000)
+    for i in range(1, 1000):
         root.insert(i)
-    for i in range(100001,200000):
+    for i in range(1001,2000):
         root.insert(i)
 
     root.PrintTree()
