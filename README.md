@@ -1,9 +1,14 @@
 # UNProgress
 UNS.py (Runs flask application)
-- Create Python Virtual Environment
-- Open directory that holds UNS.py
-- In command prompt:
+- Install necessary libraries
+    + pip install virtualenv
     + pip install flask
+- Open directory that holds UNS.py, template folder, and static folder
+- Start virtual environment in command prompt:
+    + python -m venv env
+    + //navigate to folder /env/Scripts/
+    + activate
+- In command prompt:
     + set FLASK_DEBUG=1
     + set FLASK_APP=UNS.py
     + flask run
@@ -13,7 +18,7 @@ treeTest.py (testing Tree data structure in Python)
 - Run with compiler
 
 /templates/index.html
-- Homepage of flask application
+- Homepage file of flask application
 
 /static/
 - Folder holding static images used in website
