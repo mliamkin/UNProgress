@@ -14,11 +14,14 @@ UNS.py (Runs flask application)
     + flask run
 - Into a browser, paste given local URL as web address
 
+
 treeTest.py (testing Tree data structure in Python)
 - Run with compiler
 
+
 /templates/index.html
 - Homepage file of flask application
+
 
 /static/
 - Folder holding static images used in website
