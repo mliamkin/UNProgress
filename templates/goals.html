@@ -1,0 +1,458 @@
+<html>
+    <head>
+        <title>UN Problems</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/fa23f1c4df.js" crossorigin="anonymous"></script>
+        <style>
+            .topbar, .logo
+            {
+                height: 100px;
+                margin: 0px;
+                padding: 0px;
+                background-color:white;
+            }
+            .titleTop
+            {
+                padding-top: 25px;
+                color: #333333;
+            }
+            .dataHeaders
+            {
+                color: white;
+                font-weight: 5;
+                font-size: 20;
+                height: 50px;
+                text-align: center;
+                width: 100%;
+                background-color: #333333;
+                border-radius: 0px;
+                border: 0px #333333;
+                display: inline;
+            }
+            .dataHeadersSelected
+            {
+                color: white;
+                font-weight: 5;
+                font-size: 20;
+                height: 50px;
+                text-align: center;
+                width: 100%;
+                background-color: #333333;
+                border-radius: 0px;
+                border: 0px #333333;
+                display: inline;
+            }
+            .navi
+            {
+                background-color: #333333;
+                text-align: center;
+            }
+            .navis
+            {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .dataHeaders:hover
+            {
+                color: lightblue;
+            }
+            .dataHeaders:active, .dataHeaders:focus, .dataHeadersSelected:active, .dataHeadersSelected:focus, .selected
+            {
+                background-color: lightskyblue;
+                color: #333333;
+                outline: none;
+                box-shadow: none;
+            }
+            .goal
+            {
+                padding-top: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 20px;
+                background: white;
+                width: 100%;
+                height: 100%;
+            }
+            .goal2
+            {
+                padding-top: 12.5px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background: #bbbbbb;
+                color: #333333;
+                width: 100%;
+                height: 100%;
+            }
+            .goalBox
+            {
+                text-align: center;
+                color: #333333;
+                font-size: 20;
+                height: 175px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            .goalBox2
+            {
+                color: #333333;
+                font-size: 20;
+                height: 175px;
+                padding: 10px 0px 10px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            .goalLine
+            {
+                width: 50%;
+            }
+            .breaker
+            {
+                height: 40px;
+            }
+            .parallax
+            {
+                background-image: url("{{url_for('static', filename='globe.jpg')}}");
+                min-height: 500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icons
+            {
+                font-size: 40;
+            }
+            a:hover, a:visited, a:link, a:active
+            {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container-fluid topbar">
+            <div class = "container">
+                <a href="/">
+                    <img class = "logo" src="{{url_for('static', filename='UNProgress.PNG')}}">
+                </a>
+            </div>
+        </div>
+        <div class = "container-fluid parallax">
+
+        </div>
+        <div class = "container-fluid navi">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-lg navis">
+                        <a class="navL" href=goals>
+                        <button class = "btn dataHeadersSelected selected" href=goals >GOALS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=documents>
+                        <button class = "btn dataHeaders">DOCUMENTS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=milestones>
+                        <button class = "btn dataHeaders">MILESTONES</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=statements>
+                        <button class = "btn dataHeaders">STATEMENTS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=progress></a>
+                        <button class = "btn dataHeaders">PROGRESS</button>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=more-info>
+                        <button class = "btn dataHeaders">MORE INFO</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12 breaker">
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-4 goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-money-bill icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        No Poverty
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[0]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-utensils icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Zero Hunger
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[1]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-first-aid icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Good Health and Well-Being
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[2]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-book icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Quality Education
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[3]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-balance-scale icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Gender Equality
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[4]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox"> 
+                    <div class = "goal">
+                        <i class="fas fa-hand-holding-water icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Clean Water and Sanitation
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[5]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-solar-panel icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Affordable and Clean Energy
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[6]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-dollar-sign icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Decent Work and Economic Growth
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[7]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-memory icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Industry, Innovation, and Infrastructure
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[8]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-not-equal icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Reduced Inequalities
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[9]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-city icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Sustainable Cities and Communities
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[10]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-industry icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Responsible Consumption and Production
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[11]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-smog icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Climate Action
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[12]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-water icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Life Below Water
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[13]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-mountain icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Life on Land
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[14]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-landmark icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Peace, Justice, and Strong Institution
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[15]['title'] }}
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md goalBox">
+                    <div class = "goal">
+                        <i class="fas fa-handshake icons"></i>
+                        <br>
+                        <hr class = "goalLine">
+                        Partnerships For The Goals
+                    </div>
+                </div>
+                <div class = "col-md-8 goalBox2">
+                    <div class = "goal2">
+                        <p style="font-weight: 100; font-size: 15;">GOAL DESCRIPTION</p>
+                        {{ goalList[16]['title'] }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
