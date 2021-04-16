@@ -2,13 +2,14 @@
 UNS.py (Runs flask application)
 - Install necessary libraries
     + pip install virtualenv
-    + pip install flask
-    + pip install requests
 - Open directory that holds UNS.py, template folder, and static folder
 - Start virtual environment in command prompt:
     + python -m venv env
     + //navigate to folder /env/Scripts/
     + activate
+- Install necessary libraries
+    + pip install flask
+    + pip install requests
 - In command prompt:
     + set FLASK_DEBUG=1
     + set FLASK_APP=UNS.py
@@ -25,7 +26,6 @@ requestTest.py (testing request python library with json data on United Nations 
 
 /templates/index.html
 - Homepage file of flask application
-
 
 /static/
 - Folder holding static images used in website
