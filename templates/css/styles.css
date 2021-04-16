@@ -1,0 +1,137 @@
+.topbar, .logo
+{
+    height: 105px;
+    background-color:white;
+}
+.logo
+{
+    padding-top: 5px;
+}
+.titleTop
+{
+    padding-top: 25px;
+    color: #333333;
+}
+.dataHeaders
+{
+    color: white;
+    font-weight: 5;
+    font-size: 20;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #333333;
+    border-radius: 0px;
+    border: 0px #333333;
+    display: inline;
+}
+.dataHeadersSelected
+{
+    color: white;
+    font-weight: 5;
+    font-size: 20;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #333333;
+    border-radius: 0px;
+    border: 0px #333333;
+    display: inline;
+}
+.navi
+{
+    background-color: #333333;
+    text-align: center;
+}
+.navis
+{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.dataHeaders:hover
+{
+    color: lightblue;
+}
+.dataHeaders:active, .dataHeaders:focus, .dataHeadersSelected:active, .dataHeadersSelected:focus, .selected
+{
+    background-color: lightskyblue;
+    color: #333333;
+    outline: none;
+    box-shadow: none;
+}
+.goal
+{
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+.goal2
+{
+    padding-top: 12.5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #bbbbbb;
+    color: #333333;
+    width: 100%;
+    height: 100%;
+}
+.goalBox
+{
+    text-align: center;
+    color: #333333;
+    font-size: 20;
+    height: 175px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.goalBox2
+{
+    color: #333333;
+    font-size: 20;
+    height: 175px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.goalLine
+{
+    width: 50%;
+}
+.breaker
+{
+    height: 40px;
+}
+.parallax
+{
+    background-image: url("{{url_for('static', filename='globe.jpg')}}");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icons
+{
+    font-size: 40;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.docLinks
+{
+    margin: 2.5px 2.5px 2.5px 2.5px;
+    min-height: 50px;
+    font-size: 30;
+    text-align: center;
+}
+.docL
+{
+    color:rgb(52, 166, 236);
+}

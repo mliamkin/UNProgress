@@ -1,15 +1,18 @@
 <html>
     <head>
         <title>UN Problems</title>
+        <link rel="icon" type="image/png" href="static/globeIcon.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/fa23f1c4df.js" crossorigin="anonymous"></script>
         <style>
             .topbar, .logo
             {
-                height: 100px;
-                margin: 0px;
-                padding: 0px;
+                height: 105px;
                 background-color:white;
+            }
+            .logo
+            {
+                padding-top: 5px;
             }
             .titleTop
             {
@@ -135,7 +138,7 @@
                 font-size: 30;
                 text-align: center;
             }
-            a
+            .docL
             {
                 color:rgb(52, 166, 236);
             }
@@ -145,7 +148,7 @@
         <div class = "container-fluid topbar">
             <div class = "container">
                 <a href="/">
-                    <img class = "logo" src="{{url_for('static', filename='UNProgress.PNG')}}">
+                    <img class = "logo" src="static/UNProgress.png">
                 </a>
             </div>
         </div>
@@ -211,22 +214,22 @@
             <div class = "row">
                 <div class="col-md-3">
                     <div class="docLinks shadow-sm p-3 mb-5 bg-light rounded">
-                        <a href="https://sustainabledevelopment.un.org/globalsdreport/2014" target="_blank">GSDR 2014</a>
+                        <a class = "docL" href="https://sustainabledevelopment.un.org/globalsdreport/2014" target="_blank">GSDR 2014</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="docLinks shadow-sm p-3 mb-5 bg-light rounded">
-                        <a href="https://sustainabledevelopment.un.org/globalsdreport/2015" target="_blank">GSDR 2015</a>
+                        <a class = "docL" href="https://sustainabledevelopment.un.org/globalsdreport/2015" target="_blank">GSDR 2015</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="docLinks shadow-sm p-3 mb-5 bg-light rounded">
-                        <a href="https://sustainabledevelopment.un.org/globalsdreport/2016" target="_blank">GSDR 2016</a>
+                        <a class = "docL" href="https://sustainabledevelopment.un.org/globalsdreport/2016" target="_blank">GSDR 2016</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="docLinks shadow-sm p-3 mb-5 bg-light rounded">
-                        <a href="https://sustainabledevelopment.un.org/globalsdreport/2019" target="_blank">GSDR 2019</a>
+                        <a class = "docL" href="https://sustainabledevelopment.un.org/globalsdreport/2019" target="_blank">GSDR 2019</a>
                     </div>
                 </div>
             </div>
