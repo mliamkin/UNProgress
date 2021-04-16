@@ -22,3 +22,15 @@ def documents():
 @app.route('/milestones')
 def milestones():
     return render_template('milestones.html')
+
+@app.route('/statements')
+def statements():
+    return render_template('statements.html')
+
+@app.route('/progress')
+def progress():
+    return render_template('progress.html')
+
+@app.route('/more-info')
+def moreInfo():
+    return render_template('more-info.html')
