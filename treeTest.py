@@ -43,13 +43,13 @@ class Node:
         if self.right:
             self.right.PrintTree()
 
-with recursionlimit(1000000000):
+with recursionlimit(10000000):
     print(sys.getrecursionlimit())
 
     root = Node(1000)
     for i in range(1, 1000):
         root.insert(i)
-    for i in range(1001,2000):
+    for i in range(1001,2001):
         root.insert(i)
 
     root.PrintTree()
