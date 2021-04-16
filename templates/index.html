@@ -97,7 +97,9 @@
     <body>
         <div class = "container-fluid topbar">
             <div class = "container">
-                <img class = "logo" src="{{url_for('static', filename='UNProgress.PNG')}}">
+                <a href="/">
+                    <img class = "logo" src="{{url_for('static', filename='UNProgress.PNG')}}">
+                </a>
             </div>
         </div>
         <div class = "container-fluid parallax">
@@ -107,22 +109,32 @@
             <div class = "container">
                 <div class = "row">
                     <div class = "col-lg navis">
-                        <button class = "btn dataHeaders">GOALS</button>
+                        <a href=goals>
+                        <button class = "btn dataHeaders" href=goals>GOALS</button>
+                        </a>
                     </div>
                     <div class = "col-lg navis">
+                        <a href=documents>
                         <button class = "btn dataHeaders">DOCUMENTS</button>
+                        </a>
                     </div>
                     <div class = "col-lg navis">
+                        <a href=milestones>
                         <button class = "btn dataHeaders">MILESTONES</button>
+                        </a>
                     </div>
                     <div class = "col-lg navis">
+                        <a href=statements>
                         <button class = "btn dataHeaders">STATEMENTS</button>
+                        </a>
                     </div>
                     <div class = "col-lg navis">
                         <button class = "btn dataHeaders">PROGRESS</button>
                     </div>
                     <div class = "col-lg navis">
+                        <a href=more-info>
                         <button class = "btn dataHeaders">MORE INFO</button>
+                        </a>
                     </div>
                 </div>
             </div>
