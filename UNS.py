@@ -14,3 +14,11 @@ def home():
 @app.route('/goals')
 def goals():
     return render_template('goals.html', goalList=dataGoals)
+
+@app.route('/documents')
+def documents():
+    return render_template('documents.html')
+
+@app.route('/milestones')
+def milestones():
+    return render_template('milestones.html')
