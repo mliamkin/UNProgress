@@ -24,8 +24,8 @@ requestTest.py (testing request python library with json data on United Nations 
 - pip install requests
 - Run with compiler
 
-/templates/index.html
-- Homepage file of flask application
+/templates/
+- Holds all html files for website
 
 /static/
 - Folder holding static images used in website
