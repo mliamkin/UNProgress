@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>UN Problems</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/fa23f1c4df.js" crossorigin="anonymous"></script>
+        <style>
+            .topbar, .logo
+            {
+                height: 100px;
+                margin: 0px;
+                padding: 0px;
+                background-color:white;
+            }
+            .titleTop
+            {
+                padding-top: 25px;
+                color: #333333;
+            }
+            .dataHeaders
+            {
+                color: white;
+                font-weight: 5;
+                font-size: 20;
+                height: 50px;
+                text-align: center;
+                width: 100%;
+                background-color: #333333;
+                border-radius: 0px;
+                border: 0px #333333;
+                display: inline;
+            }
+            .dataHeadersSelected
+            {
+                color: white;
+                font-weight: 5;
+                font-size: 20;
+                height: 50px;
+                text-align: center;
+                width: 100%;
+                background-color: #333333;
+                border-radius: 0px;
+                border: 0px #333333;
+                display: inline;
+            }
+            .navi
+            {
+                background-color: #333333;
+                text-align: center;
+            }
+            .navis
+            {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .dataHeaders:hover
+            {
+                color: lightblue;
+            }
+            .dataHeaders:active, .dataHeaders:focus, .dataHeadersSelected:active, .dataHeadersSelected:focus, .selected
+            {
+                background-color: lightskyblue;
+                color: #333333;
+                outline: none;
+                box-shadow: none;
+            }
+            .goal
+            {
+                padding-top: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 20px;
+                background: white;
+                width: 100%;
+                height: 100%;
+            }
+            .goal2
+            {
+                padding-top: 12.5px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background: #bbbbbb;
+                color: #333333;
+                width: 100%;
+                height: 100%;
+            }
+            .goalBox
+            {
+                text-align: center;
+                color: #333333;
+                font-size: 20;
+                height: 175px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            .goalBox2
+            {
+                color: #333333;
+                font-size: 20;
+                height: 175px;
+                padding: 10px 0px 10px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            .goalLine
+            {
+                width: 50%;
+            }
+            .breaker
+            {
+                height: 40px;
+            }
+            .parallax
+            {
+                background-image: url("{{url_for('static', filename='globe.jpg')}}");
+                min-height: 500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icons
+            {
+                font-size: 40;
+            }
+            a:hover, a:visited, a:link, a:active
+            {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container-fluid topbar">
+            <div class = "container">
+                <a href="/">
+                    <img class = "logo" src="{{url_for('static', filename='UNProgress.PNG')}}">
+                </a>
+            </div>
+        </div>
+        <div class = "container-fluid parallax">
+
+        </div>
+
+        <div class = "container-fluid navi">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-lg navis">
+                        <a class="navL" href=goals>
+                        <button class = "btn dataHeaders">GOALS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=documents>
+                        <button class = "btn dataHeaders">DOCUMENTS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=milestones>
+                        <button class = "btn dataHeadersSelected selected">MILESTONES</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=statements>
+                        <button class = "btn dataHeaders">STATEMENTS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=progress></a>
+                        <button class = "btn dataHeaders">PROGRESS</button>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=more-info>
+                        <button class = "btn dataHeaders">MORE INFO</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12 breaker">
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12" style="padding-left: 0px; padding-right: 0px; min-height: 50px; padding-bottom: 30px;">
+                    <h4 style="font-weight: 500;">Critical milestones towards coherent, efficient and inclusive follow-up and review at the global level</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <embed src="static/unMilestones.pdf" width="100%" height="1100px" />
+            </div>
+            <div class = "row">
+                <div class = "col-md-12 breaker">
+                </div>
+            </div>
+        </div>
+        <div class = "container-fluid navi" style="height: 100px;">
+            <div class = "container" style = "padding-left: 0px;">
+                <p style = "color: white; text-align: left; padding-top: 25px; margin-left: 0px; margin-bottom: 0px;">
+                    CREATED BY TEAM SWAGGER®
+                </p>
+                <p style = "color: rgb(170, 170, 170); text-align: left; margin-left: 0px; font-weight: 100;">
+                    2021
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
