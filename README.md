@@ -20,6 +20,8 @@ UNS.py (Runs flask application)
 treeTest.py (testing Tree data structure in Python)
 - Run with compiler
 
+countryClass.py (class template for countries, contains about 65 variables per country)
+
 requestTest.py (testing request python library with json data on United Nations API site)
 - pip install requests
 - Run with compiler
