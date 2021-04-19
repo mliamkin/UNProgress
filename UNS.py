@@ -652,6 +652,38 @@ def specialStructures():
     global heapTimeSpec
     heapTimeSpec = str(round(end - start, 6))
 
+def specialStructuresSearch():
+    countries = specialCountryGenerator()
+
+    specialTree = AVLTree()
+    specHeap = minHeap(100000)
+    for c in countries:
+        specialTree.root = specialTree.insertNode(specialTree.root, c.data, c.nameOfCountry)
+        specHeap.insert(countryNode(c.nameOfCountry, c.data))
+
+    start = time.time()
+
+    country = specHeap.Pop()
+    while (specHeap.size > 0):
+        country = specHeap.Pop()
+
+    global countrySearch
+    countrySearch = country
+    end = time.time()
+
+    global heapTimeSearch
+    heapTimeSearch = str(round(end - start, 10))
+
+    start = time.time()
+    if (specialTree.searchTree(countrySearch.data)):
+        end = time.time()
+
+    global treeTimeSearch
+    treeTimeSearch = str(end - start)
+
+
+
+
 r = requests.get('https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=true')
 dataGoals = json.loads(r.text)
 
@@ -714,4 +746,9 @@ def progress():
 
 @app.route('/more-info')
 def moreInfo():
-    return render_template('more-info.html')
+    specialStructuresSearch()
+    return render_template('more-info.html',
+        country = countrySearch.nameOfCountry,
+        treeTime = treeTimeSearch,
+        heapTime = heapTimeSearch
+    )
