@@ -1,12 +1,7 @@
 import requests
 import json
 
-r = requests.get('https://unstats.un.org/SDGAPI/v1/sdg/GeoArea/List')
-dataGeo = json.loads(r.text)
-for geo in dataGeo:
-    print(geo['geoAreaName'])
-
-r = requests.get('https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=true')
-dataGoals = json.loads(r.text)
-for goal in dataGoals:
-    print(goal['title'])
+r = requests.get('http://ec2-54-174-131-205.compute-1.amazonaws.com/API/HDRO_API.php/indicator_id=68606/year=2019')
+data = json.loads(r.text)
+for stat in data['indicator_value']:
+    print(stat)
