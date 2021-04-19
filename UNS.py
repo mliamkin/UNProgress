@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 from random import seed, random,randint
 import requests
 import json
@@ -120,13 +120,13 @@ class AVLTree:
             print((str(currentNode.country))) #This will print that node's data and height
             self._printInorder(currentNode.right) #This will then take care of the right side of the tree
 
-    def inOrderList(self, currentNode, vecData, vecName):
+    def inOrderList(self, currentNode, names, data):
         if (currentNode.left != None):
-            self.inOrderList(currentNode.left, vecData, vecName)
-        vecData.append(currentNode.data)
-        vecName.append(currentNode.country)
+            self.inOrderList(currentNode.left, names, data)
+        names.append(currentNode.country)
+        data.append(currentNode.data)
         if (currentNode.right != None):
-            self.inOrderList(currentNode.right, vecData, vecName)
+            self.inOrderList(currentNode.right, names, data)
 
     def searchTree(self, data): #Public version of the search function, return true or false when asked about a data number
         if self.root != None: #If the root exists then continue onto the private version
@@ -297,11 +297,17 @@ class minHeap:
             self.heapify(0)        
         return pop
 
-    def getHeapList(self, vectorData, vectorName):
+    def getHeapData(self):
+        vectorFull = []
+        vectorData = []
+        vectorName = []
         for i in range(10):
             removeNode = self.Pop()
+            vectorData.append(removeNode.data)
             vectorName.append(removeNode.nameOfCountry)
-            vectorData.append(removeNode.data) 
+        vectorFull.append(vectorName)
+        vectorFull.append(vectorData)
+        return vectorFull
 
 #maxHeap class and it's respective functions
 class maxHeap:
@@ -380,11 +386,17 @@ class maxHeap:
             self.heapify(0)        
         return pop
     
-    def getHeapList(self, vectorData, vectorName):
+    def getHeapData(self):
+        vectorFull = []
+        vectorData = []
+        vectorName = []
         for i in range(10):
             removeNode = self.Pop()
-            vectorName.append(removeNode.nameOfCountry)
             vectorData.append(removeNode.data)
+            vectorName.append(removeNode.nameOfCountry)
+        vectorFull.append(vectorName)
+        vectorFull.append(vectorData)
+        return vectorFull
 
 class specialCountryNode:
     def __init__ (self, nameOfCountry, data):
@@ -412,31 +424,14 @@ def specialCountryGenerator():
 
 app = Flask(__name__)
 
-heapPovData = []
-heapPovName = []
-heapGenData = []
-heapGenName = []
-heapHungerData = []
-heapHungerName = []
-heapExpData = []
-heapExpName = []
-heapLitData = []
-heapLitName = []
-heapSpecData = []
-heapSpecName = []
+heapNames = []
+heapData = []
 
-vecPovData = []
-vecPovName = []
-vecGenData = []
-vecGenName = []
-vecHungerData = []
-vecHungerName = []
-vecExpData = []
-vecExpName = []
-vecLitData = []
-vecLitName = []
-vecSpecData = []
-vecSpecName = []
+treeNames = []
+treeData = []
+
+heapTimes = []
+treeTimes = []
 
 def getHeaps():
     #Poverty Data Heap
@@ -450,18 +445,19 @@ def getHeaps():
         povertyHeap.insert(countryNode(data['country_name'][goal], data['indicator_value'][goal]['137506']['2019']))
 
     #Generate list of names and data to iterate through in HTML
-    povertyHeap.getHeapList(heapPovData, heapPovName)
+    datas = povertyHeap.getHeapData()
+    heapData.append(datas[1])
+    heapNames.append(datas[0])
     end = time.time()
 
     #Time for process
-    global heapTimePov
-    heapTimePov = str(round(end - start, 6))
+    heapTimes.append(str(round(end - start, 6)))
 
     #Hunger Data Heap
-    start = time.time()
     hungerHeap = maxHeap(195)
 
     #Conecting to API with file name and converting to JSON format for ease of use
+    start = time.time()
     filename = os.path.join(app.static_folder, 'data', 'GlobalHunger2018.json')
     with open(filename) as test_file:
         hungerData = json.load(test_file)
@@ -469,18 +465,19 @@ def getHeaps():
         hungerHeap.insert(countryNode(goal['Entity'], goal['Global Hunger Index (IFPRI (2016))']))
     
     #Generate list of names and data to iterate through in HTML
-    hungerHeap.getHeapList(heapHungerData, heapHungerName)
+    datas = hungerHeap.getHeapData()
+    heapData.append(datas[1])
+    heapNames.append(datas[0])
     end = time.time()
 
     #Time for process
-    global heapTimeHunger
-    heapTimeHunger = str(round(end - start, 6))
+    heapTimes.append(str(round(end - start, 6)))
 
     #Expectancy Data Heap
-    start = time.time()
     expHeap = minHeap(250)
 
     #Conecting to API with file name and converting to JSON format for ease of use
+    start = time.time()
     filename = os.path.join(app.static_folder, 'data', 'LifeExpectancy2019.json')
     with open(filename) as test_file:
         expData = json.load(test_file)
@@ -488,18 +485,19 @@ def getHeaps():
         expHeap.insert(countryNode(goal['Entity'], goal['Life expectancy']))
 
     #Generate list of names and data to iterate through in HTML
-    expHeap.getHeapList(heapExpData, heapExpName)
+    datas = expHeap.getHeapData()
+    heapData.append(datas[1])
+    heapNames.append(datas[0])
     end = time.time()
 
     #Time for process
-    global heapTimeExp
-    heapTimeExp = str(round(end - start, 6))
+    heapTimes.append(str(round(end - start, 6)))
 
     #Female Literacy Heap
-    start = time.time()
     fLitHeap = minHeap(180)
 
     #Conecting to API with file name and converting to JSON format for ease of use
+    start = time.time()
     filename = os.path.join(app.static_folder, 'data', 'YouthLiteracyFemale2015.json')
     with open(filename) as test_file:
         fLitData = json.load(test_file)
@@ -507,12 +505,13 @@ def getHeaps():
         fLitHeap.insert(countryNode(goal['Entity'], goal['Youth literacy rate, population 15-24 years, female (%)']))
 
     #Generate list of names and data to iterate through in HTML
-    fLitHeap.getHeapList(heapLitData, heapLitName)
+    datas = fLitHeap.getHeapData()
+    heapData.append(datas[1])
+    heapNames.append(datas[0])
     end = time.time()
 
     #Time for process
-    global heapTimeLit
-    heapTimeLit = str(round(end - start, 6))
+    heapTimes.append(str(round(end - start, 6)))
 
     #Gender Data Heap
     genderHeap = maxHeap(195)
@@ -525,12 +524,13 @@ def getHeaps():
         genderHeap.insert(countryNode(genData['country_name'][goal], genData['indicator_value'][goal]['68606']['2019']))
 
     #Generate list of names and data to iterate through in HTML
-    genderHeap.getHeapList(heapGenData, heapGenName)
+    datas = genderHeap.getHeapData()
+    heapData.append(datas[1])
+    heapNames.append(datas[0])
     end = time.time()
 
     #Time for process
-    global heapTimeGen
-    heapTimeGen = str(round(end - start, 6))
+    heapTimes.append(str(round(end - start, 6)))
 
 def getTrees():
     #Poverty Data AVL Tree
@@ -544,12 +544,15 @@ def getTrees():
         povertyTree.root = povertyTree.insertNode(povertyTree.root, data['indicator_value'][goal]['137506']['2019'], data['country_name'][goal])
 
     #Generate list of names and data to iterate through in HTML
-    povertyTree.inOrderList(povertyTree.root, vecPovData, vecPovName)
+    names = []
+    data = []
+    povertyTree.inOrderList(povertyTree.root, names, data)
+    treeNames.append(names)
+    treeData.append(data)
     end = time.time()
 
     #Time for process
-    global avlTimePov
-    avlTimePov = str(round(end - start, 6))
+    treeTimes.append(str(round(end - start, 6)))
 
     #Hunger Data AVL Tree
     start = time.time()
@@ -563,12 +566,15 @@ def getTrees():
         hungerTree.root = hungerTree.insertNode(hungerTree.root, goal['Global Hunger Index (IFPRI (2016))'], goal['Entity'])
 
     #Generate list of names and data to iterate through in HTML
-    hungerTree.inOrderList(hungerTree.root, vecHungerData, vecHungerName)
+    names = []
+    data = []
+    hungerTree.inOrderList(hungerTree.root, names, data)
+    treeNames.append(names)
+    treeData.append(data)
     end = time.time()
 
     #Time for process
-    global avlTimeHunger
-    avlTimeHunger = str(round(end - start, 6))
+    treeTimes.append(str(round(end - start, 6)))
 
     #Life expectancy Data AVL Tree
     start = time.time()
@@ -582,12 +588,15 @@ def getTrees():
         expTree.root = expTree.insertNode(expTree.root, goal['Life expectancy'], goal['Entity'])
 
     #Generate list of names and data to iterate through in HTML
-    expTree.inOrderList(expTree.root, vecExpData, vecExpName)
+    names = []
+    data = []
+    expTree.inOrderList(expTree.root, names, data)
+    treeNames.append(names)
+    treeData.append(data)
     end = time.time()
 
     #Time for process
-    global avlTimeExp
-    avlTimeExp = str(round(end - start, 6))
+    treeTimes.append(str(round(end - start, 6)))
 
     #Life expectancy Data AVL Tree
     start = time.time()
@@ -601,12 +610,15 @@ def getTrees():
         litTree.root = litTree.insertNode(litTree.root, goal['Youth literacy rate, population 15-24 years, female (%)'], goal['Entity'])
 
     #Generate list of names and data to iterate through in HTML
-    litTree.inOrderList(litTree.root, vecLitData, vecLitName)
+    names = []
+    data = []
+    litTree.inOrderList(litTree.root, names, data)
+    treeNames.append(names)
+    treeData.append(data)
     end = time.time()
 
     #Time for process
-    global avlTimeLit
-    avlTimeLit = str(round(end - start, 6))
+    treeTimes.append(str(round(end - start, 6)))
 
     #Gender Data AVL Tree
     genderTree = AVLTree()
@@ -619,14 +631,20 @@ def getTrees():
         genderTree.root = genderTree.insertNode(genderTree.root, genData['indicator_value'][goal]['68606']['2019'], genData['country_name'][goal])
 
     #Generate list of names and data to iterate through in HTML
-    genderTree.inOrderList(genderTree.root, vecGenData, vecGenName)
+    names = []
+    data = []
+    genderTree.inOrderList(genderTree.root, names, data)
+    treeNames.append(names)
+    treeData.append(data)
     end = time.time()
 
     #Time for process
-    global avlTimeGen
-    avlTimeGen = str(round(end - start, 6))
+    treeTimes.append(str(round(end - start, 6)))
 
 def specialStructures():
+    fullList = []
+    timeList = []
+
     countries = specialCountryGenerator()
 
     start = time.time()
@@ -635,24 +653,37 @@ def specialStructures():
     for c in countries:
         specialTree.root = specialTree.insertNode(specialTree.root, c.data, c.nameOfCountry)
 
-    specialTree.inOrderList(specialTree.root, vecSpecData, vecSpecName)
+    names = []
+    data = []
+    specialTree.inOrderList(specialTree.root, names, data)
+
     end = time.time()
 
-    global avlTimeSpec
-    avlTimeSpec = str(round(end - start, 6))
+    timeList.append(str(round(end - start, 6)))
 
     start = time.time()
     specHeap = minHeap(100000)
 
     for c in countries:
         specHeap.insert(countryNode(c.nameOfCountry, c.data))
-    specHeap.getHeapList(heapSpecData, heapSpecName)
+
+    datas = specHeap.getHeapData()
     end = time.time()
 
-    global heapTimeSpec
-    heapTimeSpec = str(round(end - start, 6))
+    timeList.append(str(round(end - start, 6)))
+    fullList.append(timeList)
+
+    fullList.append(names)
+    fullList.append(data)
+
+    fullList.append(datas[0])
+    fullList.append(datas[1])
+
+    return fullList
 
 def specialStructuresSearch():
+    fullList = []
+
     countries = specialCountryGenerator()
 
     specialTree = AVLTree()
@@ -667,19 +698,18 @@ def specialStructuresSearch():
     while (specHeap.size > 0):
         country = specHeap.Pop()
 
-    global countrySearch
-    countrySearch = country
+    fullList.append(country)
     end = time.time()
 
-    global heapTimeSearch
-    heapTimeSearch = str(round(end - start, 10))
+    fullList.append(str(round(end - start, 10)))
 
     start = time.time()
-    if (specialTree.searchTree(countrySearch.data)):
+    if (specialTree.searchTree(country.data)):
         end = time.time()
 
-    global treeTimeSearch
-    treeTimeSearch = str(end - start)
+    fullList.append(str(end - start))
+
+    return fullList
 
 
 
@@ -699,9 +729,12 @@ def home():
 def goals():
     return render_template('goals.html', goalList=dataGoals)
 
-@app.route('/documents')
+@app.route('/documents', methods=['GET', 'POST'])
 def documents():
-    return render_template('documents.html')
+    tag = "None"
+    if (request.method == 'POST'):
+        tag = request.form['tag']
+    return render_template('documents.html', tag = tag)
 
 @app.route('/milestones')
 def milestones():
@@ -709,12 +742,13 @@ def milestones():
 
 @app.route('/statements')
 def statements():
-    specialStructures()
+    timeList = []
+    timeList = specialStructures()
     return render_template('statements.html', 
-        treeData = vecSpecData, treeName = vecSpecName,
-        heapData = heapSpecData, heapName = heapSpecName,
-        treeTime = avlTimeSpec,
-        heapTime = heapTimeSpec
+        treeData = timeList[2], treeName = timeList[1],
+        heapData = timeList[4], heapName = timeList[3],
+        treeTime = timeList[0][0],
+        heapTime = timeList[0][1]
         )
 
 @app.route('/progress')
@@ -722,33 +756,19 @@ def progress():
     getHeaps()
     getTrees()
     return render_template('progress.html', 
-        povData = vecPovData, povName = vecPovName, 
-        povDataH = heapPovData, povNameH = heapPovName, 
-        genData = vecGenData, genName = vecGenName, 
-        genDataH = heapGenData, genNameH = heapGenName,
-        hungerData = vecHungerData, hungerName = vecHungerName,
-        hungerDataH = heapHungerData, hungerNameH = heapHungerName,
-        expData = vecExpData, expName = vecExpName,
-        expDataH = heapExpData, expNameH = heapExpName,
-        litData = vecLitData, litName = vecLitName,
-        litDataH = heapLitData, litNameH = heapLitName,
-        timerAVLPov = avlTimePov, 
-        timerHeapPov = heapTimePov, 
-        timerAVLGen = avlTimeGen, 
-        timerHeapGen = heapTimeGen,
-        timerHeapHunger = heapTimeHunger,
-        timerAVLHunger = avlTimeHunger,
-        timerHeapExp = heapTimeExp,
-        timerAVLExp = avlTimeExp,
-        timerHeapLit = heapTimeLit,
-        timerAVLLit = avlTimeLit
+        heapTimes = heapTimes,
+        treeTimes = treeTimes,
+        heapData = heapData,
+        heapNames = heapNames,
+        treeData = treeData,
+        treeNames = treeNames
         )
 
 @app.route('/more-info')
 def moreInfo():
-    specialStructuresSearch()
+    fullList = specialStructuresSearch()
     return render_template('more-info.html',
-        country = countrySearch.nameOfCountry,
-        treeTime = treeTimeSearch,
-        heapTime = heapTimeSearch
+        country = fullList[0].nameOfCountry,
+        treeTime = fullList[1],
+        heapTime = fullList[2]
     )
