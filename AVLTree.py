@@ -1,4 +1,4 @@
-
+from restcountries import RestCountryApiV2 as rapi
 #I also was aided by YouTube videos from Brian Faure
 class Node: #Here is the Node class, this is temporary until we get the Country nodes
     def __init__(self, data):
@@ -20,8 +20,10 @@ class AVLTree:
         	return Node(key)
         elif key < root.data:
         	root.left = self.insertNode(root.left, key)
-        else:
+        elif key > root.data:
         	root.right = self.insertNode(root.right, key)
+        else:
+            return root
 
 		# Step 2 - Update the height of the
 		# ancestor node
@@ -199,16 +201,19 @@ def fillTree(tree, numOfElements = 100000, maxInt = 200000): #A Helping Tester f
         tree.insertNode(currentNode)
         tree.printInorder()
         print("-----------------------")
-        print("The height is " + str(a.heightOfTree()))
+        #print("The height is " + str(a.heightOfTree()))
         print("-----------------------")
     return tree
 
 a = AVLTree()
-from random import randint
-for i in range(100000):
-    a.root = a.insertNode(a.root,i)
+a.root = a.insertNode(a.root, 3)
+a.root = a.insertNode(a.root, 2)
+a.root = a.insertNode(a.root, 1)
 a.printInorder()
-print(a.heightOfTree())
-
+print("--------------------")
+a.root = a.insertNode(a.root, 3)
+a.root = a.insertNode(a.root, 2)
+a.root = a.insertNode(a.root, 1)
+a.printInorder()
 
 
