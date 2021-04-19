@@ -1,8 +1,11 @@
-from restcountries import RestCountryApiV2 as rapi
+from random import seed, random,randint
+import time
+
 #I also was aided by YouTube videos from Brian Faure
 class Node: #Here is the Node class, this is temporary until we get the Country nodes
-    def __init__(self, data):
-        self.data = data #Holds the data that will be sorted by
+    def __init__(self, _data, _country):
+        self.data = _data #Holds the data that will be sorted by
+        self.country = _country
         self.left = None #Holds the left child
         self.right = None #Holds the right child
         self.height = 1
@@ -13,17 +16,15 @@ class AVLTree:
         self.root = None
 
     # This code is contributed by Ajitesh Pathak from GeekForGeeks
-    def insertNode(self, root, key):
+    def insertNode(self, root, data, country):
 		
 		# Step 1 - Perform normal BST
         if not root:
-        	return Node(key)
-        elif key < root.data:
-        	root.left = self.insertNode(root.left, key)
-        elif key > root.data:
-        	root.right = self.insertNode(root.right, key)
+        	return Node(data, country)
+        elif data < root.data:
+        	root.left = self.insertNode(root.left, data, country)
         else:
-            return root
+        	root.right = self.insertNode(root.right, data, country)
 
 		# Step 2 - Update the height of the
 		# ancestor node
@@ -36,20 +37,20 @@ class AVLTree:
 		# Step 4 - If the node is unbalanced,
 		# then try out the 4 cases
 		# Case 1 - Left Left
-        if balance > 1 and key < root.left.data:
+        if balance > 1 and data < root.left.data:
         	return self.rightRotate(root)
 
 		# Case 2 - Right Right
-        if balance < -1 and key > root.right.data:
+        if balance < -1 and data > root.right.data:
         	return self.leftRotate(root)
 
 		# Case 3 - Left Right
-        if balance > 1 and key > root.left.data:
+        if balance > 1 and data > root.left.data:
         	root.left = self.leftRotate(root.left)
         	return self.rightRotate(root)
 
 		# Case 4 - Right Left
-        if balance < -1 and key < root.right.data:
+        if balance < -1 and data < root.right.data:
         	root.right = self.rightRotate(root.right)
         	return self.leftRotate(root)
 
@@ -112,8 +113,16 @@ class AVLTree:
     def _printInorder(self, currentNode): #This is the private function of the printInorder function, that way nothing can change it outside of the class
         if currentNode != None: #If the currentNode exists
             self._printInorder(currentNode.left) #Traverse down the Left side until it reaches a node that does not exist
-            print((str(currentNode.data))) #This will print that node's data and height
+            print((str(currentNode.country))) #This will print that node's data and height
             self._printInorder(currentNode.right) #This will then take care of the right side of the tree
+
+    def inOrderList(self, currentNode, vecData, vecName):
+        if (currentNode.left != None):
+            self.inOrderList(currentNode.left, vecData, vecName)
+        vecData.append(currentNode.data)
+        vecName.append(currentNode.country)
+        if (currentNode.right != None):
+            self.inOrderList(currentNode.right, vecData, vecName)
 
     def searchTree(self, data): #Public version of the search function, return true or false when asked about a data number
         if self.root != None: #If the root exists then continue onto the private version
@@ -194,6 +203,33 @@ class AVLTree:
 
 
 
+class specialCountryNode:
+    def __init__ (self, nameOfCountry, data):
+        self.nameOfCountry = nameOfCountry
+        self.data = data
+
+def specialCountryGenerator():
+    seed(time.ctime())
+    specialCountryList = []    
+    
+    for x in range(100000):
+        
+        specialCountryName = chr(randint(64, 91))
+        
+        for i in range(randint(0, 56)):
+            specialCountryName = specialCountryName + chr(randint(97, 122))
+        
+        pHolder = 0.0
+        while(pHolder < .394 or pHolder > .957):
+            pHolder = float( int(random() * 1000000) / 1000000 )
+                
+
+
+        sC = specialCountryNode(specialCountryName, pHolder)
+        specialCountryList.append(sC)
+
+    return specialCountryList
+
 def fillTree(tree, numOfElements = 100000, maxInt = 200000): #A Helping Tester function that fills the tree with random number nodes 0 - 200,000
     from random import randint
     for _ in range(numOfElements):
@@ -201,19 +237,19 @@ def fillTree(tree, numOfElements = 100000, maxInt = 200000): #A Helping Tester f
         tree.insertNode(currentNode)
         tree.printInorder()
         print("-----------------------")
-        #print("The height is " + str(a.heightOfTree()))
+        print("The height is " + str(a.heightOfTree()))
         print("-----------------------")
     return tree
 
-a = AVLTree()
-a.root = a.insertNode(a.root, 3)
-a.root = a.insertNode(a.root, 2)
-a.root = a.insertNode(a.root, 1)
-a.printInorder()
-print("--------------------")
-a.root = a.insertNode(a.root, 3)
-a.root = a.insertNode(a.root, 2)
-a.root = a.insertNode(a.root, 1)
-a.printInorder()
+countries = specialCountryGenerator()
+specialTree = AVLTree()
+
+for c in countries:
+    print(c.nameOfCountry)
+    print(c.data)
+    specialTree.root = specialTree.insertNode(specialTree.root, c.data, c.nameOfCountry)
+
+specialTree.printInorder()
+    
 
 

@@ -1,8 +1,10 @@
 from flask import Flask, render_template, url_for
-import random
+from random import seed, random,randint
 import requests
 import json
 import time
+import sys
+import os
 
 #I also was aided by YouTube videos from Brian Faure
 class Node: #Here is the Node class, this is temporary until we get the Country nodes
@@ -203,35 +205,459 @@ class AVLTree:
         
         return currentNode
 
+#Node used for testing, contains name of country and a data value
+#Handles less-than-comparison through comparing two data values
+class countryNode:
+    
+    def __init__(self, nameOfCountry = "", data = 0):
+        self.nameOfCountry = nameOfCountry
+        self.data = data
+    
+    
+    def __lt__(self, rms):          
+        if(self.data < rms.data):
+            return True
+        else:
+            return False  
+          
+#minHeap class and it's respective functions
+class minHeap:
+    
+    #Constructor: Creates capacity of Heap, size of Heap, and Heap List
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.size = -1
+        pHolder = countryNode()
+        self.Heap = [pHolder] * (self.capacity)        
+    
+    #Returns the parent of node at an index
+    def parent(self, index):
+        return (index)//2
+
+    #Returns left Child of node at an index
+    def leftChild(self, index):
+        return (2 * index)
+    
+    #Returns right Child of node at an index
+    def rightChild(self, index):
+        return (2 * index) + 1
+
+    #Switches values of Heap between two indices: first_index and second_index
+    def swap(self, first_index, second_index):
+        self.Heap[first_index], self.Heap[second_index] = self.Heap[second_index], self.Heap[first_index]
+
+    #Inserts a new Node - newCountry - into Heap unless size >= capacity
+    #Swaps values in Heap until Heap is organized with country with minimum 
+    # value on top
+    def insert(self, newCountry):
+        if(self.size >= self.capacity):
+            return        
+        self.size += 1
+        self.Heap[self.size] = newCountry
+
+        currIndex = self.size        
+
+        while (self.Heap[currIndex] < self.Heap[self.parent(currIndex)] ):
+            self.swap(currIndex, self.parent(currIndex))
+            currIndex = self.parent(currIndex)  
+
+    #Prints country name from lowest data value to highest data value
+    #Can be adjusted to print the first 10 values by changing for loop to the one below
+    # for i in range(0, 10)
+    def Print(self):        
+        for i in range (0, (self.size+1) ):            
+            print(self.Heap[i].nameOfCountry)
+
+    #Heapify Function Steps
+    # Step 1: Check that node at index has children
+    # Step 2: Check if node at index is a greater value than either left or right child
+    # Step 3: If node at index is greater value than left child, 
+    # Step 3a (cont.): Swap values then repeat Steps 1 & 2 with left Child index value    
+    # Step 4: Swap values at index node and index's right child node
+    # Step 4a (cont.): Repeat Steps 1 & 2 with right Child index value
+    def heapify(self, index):
+        if not (index >= self.size//2 and index <= self.size):
+            if (self.Heap[index] > self.Heap[self.leftChild(index)] or self.Heap[index] > self.Heap[self.rightChild(index)]):
+                if self.Heap[self.rightChild(index)] > self.Heap[self.leftChild(index)]:
+                    self.swap(index, self.leftChild(index) )
+                    self.heapify(self.leftChild(index) )
+                else:
+                    self.swap(index, self.rightChild(index))
+                    self.heapify(self.rightChild(index))
+        
+    #Removes and returns country with minimum value of Heap while 
+    #reorganizing Heap accordingly
+    #Note: Returns countryNode, not string. Therefore if desiring to print
+    #Note (cont.): country name, call on nameOfCountry within print statement
+    def Pop(self):
+        pop = self.Heap[0]
+        self.Heap[0] = self.Heap[self.size]
+        self.size -= 1
+        if self.size > 0:
+            self.heapify(0)        
+        return pop
+
+    def getHeapList(self, vectorData, vectorName):
+        for i in range(10):
+            removeNode = self.Pop()
+            vectorName.append(removeNode.nameOfCountry)
+            vectorData.append(removeNode.data) 
+
+#maxHeap class and it's respective functions
+class maxHeap:
+    
+    #Constructor: Creates capacity of Heap, size of Heap, and Heap List
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.size = -1
+        pHolder = countryNode("", sys.maxsize)
+        self.Heap = [pHolder] * (self.capacity)        
+    
+    #Returns the parent of node at an index
+    def parent(self, index):
+        return (index)//2
+
+    #Returns left Child of node at an index
+    def leftChild(self, index):
+        return (2 * index)
+    
+    #Returns right Child of node at an index
+    def rightChild(self, index):
+        return (2 * index) + 1
+
+    #Switches values of Heap between two indices: first_index and second_index
+    def swap(self, first_index, second_index):
+        self.Heap[first_index], self.Heap[second_index] = self.Heap[second_index], self.Heap[first_index]
+
+    #Inserts a new Node - newCountry - into Heap unless size >= capacity
+    #Swaps values in Heap until Heap is organized with maximum value on top
+    def insert(self, newCountry):
+        if(self.size >= self.capacity):
+            return        
+        self.size += 1
+        self.Heap[self.size] = newCountry
+
+        currIndex = self.size        
+
+        while (self.Heap[currIndex] > self.Heap[self.parent(currIndex)] ):
+            self.swap(currIndex, self.parent(currIndex))
+            currIndex = self.parent(currIndex)  
+
+    #Prints country names from highest data value to lowest data value
+    #Can be adjusted to print the first 10 values by changing for loop to the one below
+    # for i in range(0, 10)
+    def Print(self):        
+        for i in range (0, (self.size+1) ):            
+            print(self.Heap[i].nameOfCountry)
+
+    #Heapify Function Steps
+    # Step 1: Check that node at index has children
+    # Step 2: Check if node at index is a lesser value than either left or right child
+    # Step 3: If node at index is greater value than left child, 
+    # Step 3a (cont.): Swap values then repeat Steps 1 & 2 with left Child index value    
+    # Step 4: Swap values at index node and index's right child node
+    # Step 4a (cont.): Repeat Steps 1 & 2 with right Child index value
+
+    def heapify(self, index):
+        if not (index >= self.size//2 and index <= self.size):
+            if (self.Heap[index] < self.Heap[self.leftChild(index)] or self.Heap[index] < self.Heap[self.rightChild(index)]):
+                if self.Heap[self.rightChild(index)] < self.Heap[self.leftChild(index)]:
+                    self.swap(index, self.leftChild(index) )
+                    self.heapify(self.leftChild(index) )
+                else:
+                    self.swap(index, self.rightChild(index))
+                    self.heapify(self.rightChild(index))
+
+    #Removes and returns country with maximum value of Heap 
+    #while reorganizing Heap accordingly
+    #Note: Returns countryNode, not string. Therefore if desiring to print
+    #Note (cont.): country name, call on nameOfCountry within print statement
+    def Pop(self):
+        pop = self.Heap[0]
+        self.Heap[0] = self.Heap[self.size]
+        self.size -= 1
+        if self.size > 0:            
+            self.heapify(0)        
+        return pop
+    
+    def getHeapList(self, vectorData, vectorName):
+        for i in range(10):
+            removeNode = self.Pop()
+            vectorName.append(removeNode.nameOfCountry)
+            vectorData.append(removeNode.data)
+
+class specialCountryNode:
+    def __init__ (self, nameOfCountry, data):
+        self.nameOfCountry = nameOfCountry
+        self.data = data
+
+def specialCountryGenerator():
+    seed(time.ctime())
+    specialCountryList = []    
+    
+    for x in range(100000):
+        
+        specialCountryName = "Country " + str(x+1)
+        
+        pHolder = 0.0
+        while(pHolder < .394 or pHolder > .957):
+            pHolder = float( int(random() * 10000000) / 10000000)
+                
+
+
+        sC = specialCountryNode(specialCountryName, pHolder)
+        specialCountryList.append(sC)
+
+    return specialCountryList
+
 app = Flask(__name__)
+
+heapPovData = []
+heapPovName = []
+heapGenData = []
+heapGenName = []
+heapHungerData = []
+heapHungerName = []
+heapExpData = []
+heapExpName = []
+heapLitData = []
+heapLitName = []
+heapSpecData = []
+heapSpecName = []
 
 vecPovData = []
 vecPovName = []
 vecGenData = []
 vecGenName = []
+vecHungerData = []
+vecHungerName = []
+vecExpData = []
+vecExpName = []
+vecLitData = []
+vecLitName = []
+vecSpecData = []
+vecSpecName = []
 
-start = time.time()
-povertyTree = AVLTree()
-r = requests.get('http://ec2-54-174-131-205.compute-1.amazonaws.com/API/HDRO_API.php/indicator_id=137506/year=2019')
-povData = json.loads(r.text)
-for goal in povData['indicator_value']:
-    povertyTree.root = povertyTree.insertNode(povertyTree.root, povData['indicator_value'][goal]['137506']['2019'], povData['country_name'][goal])
-povertyTree.inOrderList(povertyTree.root, vecPovData, vecPovName)
-end = time.time()
-avlTimePov = str(round(end - start, 4))
+def getHeaps():
+    #Poverty Data Heap
+    povertyHeap = minHeap(195)
 
-start = time.time()
-genderTree = AVLTree()
-r = requests.get('http://ec2-54-174-131-205.compute-1.amazonaws.com/API/HDRO_API.php/indicator_id=68606/year=2019')
-genData = json.loads(r.text)
-for goal in genData['indicator_value']:
-    genderTree.root = genderTree.insertNode(genderTree.root, genData['indicator_value'][goal]['68606']['2019'], genData['country_name'][goal])
-genderTree.inOrderList(genderTree.root, vecGenData, vecGenName)
-end = time.time()
-avlTimeGen = str(round(end - start, 4))
+    #Conecting to API with URL and converting to JSON format for ease of use
+    r = requests.get('http://ec2-54-174-131-205.compute-1.amazonaws.com/API/HDRO_API.php/indicator_id=137506/year=2019')
+    data = json.loads(r.text)
+    start = time.time()
+    for goal in data['indicator_value']:
+        povertyHeap.insert(countryNode(data['country_name'][goal], data['indicator_value'][goal]['137506']['2019']))
+
+    #Generate list of names and data to iterate through in HTML
+    povertyHeap.getHeapList(heapPovData, heapPovName)
+    end = time.time()
+
+    #Time for process
+    global heapTimePov
+    heapTimePov = str(round(end - start, 6))
+
+    #Hunger Data Heap
+    start = time.time()
+    hungerHeap = maxHeap(195)
+
+    #Conecting to API with file name and converting to JSON format for ease of use
+    filename = os.path.join(app.static_folder, 'data', 'GlobalHunger2018.json')
+    with open(filename) as test_file:
+        hungerData = json.load(test_file)
+    for goal in hungerData:
+        hungerHeap.insert(countryNode(goal['Entity'], goal['Global Hunger Index (IFPRI (2016))']))
+    
+    #Generate list of names and data to iterate through in HTML
+    hungerHeap.getHeapList(heapHungerData, heapHungerName)
+    end = time.time()
+
+    #Time for process
+    global heapTimeHunger
+    heapTimeHunger = str(round(end - start, 6))
+
+    #Expectancy Data Heap
+    start = time.time()
+    expHeap = minHeap(250)
+
+    #Conecting to API with file name and converting to JSON format for ease of use
+    filename = os.path.join(app.static_folder, 'data', 'LifeExpectancy2019.json')
+    with open(filename) as test_file:
+        expData = json.load(test_file)
+    for goal in expData:
+        expHeap.insert(countryNode(goal['Entity'], goal['Life expectancy']))
+
+    #Generate list of names and data to iterate through in HTML
+    expHeap.getHeapList(heapExpData, heapExpName)
+    end = time.time()
+
+    #Time for process
+    global heapTimeExp
+    heapTimeExp = str(round(end - start, 6))
+
+    #Female Literacy Heap
+    start = time.time()
+    fLitHeap = minHeap(180)
+
+    #Conecting to API with file name and converting to JSON format for ease of use
+    filename = os.path.join(app.static_folder, 'data', 'YouthLiteracyFemale2015.json')
+    with open(filename) as test_file:
+        fLitData = json.load(test_file)
+    for goal in fLitData:
+        fLitHeap.insert(countryNode(goal['Entity'], goal['Youth literacy rate, population 15-24 years, female (%)']))
+
+    #Generate list of names and data to iterate through in HTML
+    fLitHeap.getHeapList(heapLitData, heapLitName)
+    end = time.time()
+
+    #Time for process
+    global heapTimeLit
+    heapTimeLit = str(round(end - start, 6))
+
+    #Gender Data Heap
+    genderHeap = maxHeap(195)
+
+    #Conecting to API with URL and converting to JSON format for ease of use
+    r = requests.get('http://ec2-54-174-131-205.compute-1.amazonaws.com/API/HDRO_API.php/indicator_id=68606/year=2019')
+    genData = json.loads(r.text)
+    start = time.time()
+    for goal in genData['indicator_value']:
+        genderHeap.insert(countryNode(genData['country_name'][goal], genData['indicator_value'][goal]['68606']['2019']))
+
+    #Generate list of names and data to iterate through in HTML
+    genderHeap.getHeapList(heapGenData, heapGenName)
+    end = time.time()
+
+    #Time for process
+    global heapTimeGen
+    heapTimeGen = str(round(end - start, 6))
+
+def getTrees():
+    #Poverty Data AVL Tree
+    povertyTree = AVLTree()
+
+    #Conecting to API with URL and converting to JSON format for ease of use
+    r = requests.get('http://ec2-54-174-131-205.compute-1.amazonaws.com/API/HDRO_API.php/indicator_id=137506/year=2019')
+    data = json.loads(r.text)
+    start = time.time()
+    for goal in data['indicator_value']:
+        povertyTree.root = povertyTree.insertNode(povertyTree.root, data['indicator_value'][goal]['137506']['2019'], data['country_name'][goal])
+
+    #Generate list of names and data to iterate through in HTML
+    povertyTree.inOrderList(povertyTree.root, vecPovData, vecPovName)
+    end = time.time()
+
+    #Time for process
+    global avlTimePov
+    avlTimePov = str(round(end - start, 6))
+
+    #Hunger Data AVL Tree
+    start = time.time()
+    hungerTree = AVLTree()
+
+    #Conecting to API with file name and converting to JSON format for ease of use
+    filename = os.path.join(app.static_folder, 'data', 'GlobalHunger2018.json')
+    with open(filename) as test_file:
+        hungerData = json.load(test_file)
+    for goal in hungerData:
+        hungerTree.root = hungerTree.insertNode(hungerTree.root, goal['Global Hunger Index (IFPRI (2016))'], goal['Entity'])
+
+    #Generate list of names and data to iterate through in HTML
+    hungerTree.inOrderList(hungerTree.root, vecHungerData, vecHungerName)
+    end = time.time()
+
+    #Time for process
+    global avlTimeHunger
+    avlTimeHunger = str(round(end - start, 6))
+
+    #Life expectancy Data AVL Tree
+    start = time.time()
+    expTree = AVLTree()
+
+    #Conecting to API with file name and converting to JSON format for ease of use
+    filename = os.path.join(app.static_folder, 'data', 'LifeExpectancy2019.json')
+    with open(filename) as test_file:
+        expData = json.load(test_file)
+    for goal in expData:
+        expTree.root = expTree.insertNode(expTree.root, goal['Life expectancy'], goal['Entity'])
+
+    #Generate list of names and data to iterate through in HTML
+    expTree.inOrderList(expTree.root, vecExpData, vecExpName)
+    end = time.time()
+
+    #Time for process
+    global avlTimeExp
+    avlTimeExp = str(round(end - start, 6))
+
+    #Life expectancy Data AVL Tree
+    start = time.time()
+    litTree = AVLTree()
+
+    #Conecting to API with file name and converting to JSON format for ease of use
+    filename = os.path.join(app.static_folder, 'data', 'YouthLiteracyFemale2015.json')
+    with open(filename) as test_file:
+        litData = json.load(test_file)
+    for goal in litData:
+        litTree.root = litTree.insertNode(litTree.root, goal['Youth literacy rate, population 15-24 years, female (%)'], goal['Entity'])
+
+    #Generate list of names and data to iterate through in HTML
+    litTree.inOrderList(litTree.root, vecLitData, vecLitName)
+    end = time.time()
+
+    #Time for process
+    global avlTimeLit
+    avlTimeLit = str(round(end - start, 6))
+
+    #Gender Data AVL Tree
+    genderTree = AVLTree()
+
+    #Conecting to API with URL and converting to JSON format for ease of use
+    r = requests.get('http://ec2-54-174-131-205.compute-1.amazonaws.com/API/HDRO_API.php/indicator_id=68606/year=2019')
+    genData = json.loads(r.text)
+    start = time.time()
+    for goal in genData['indicator_value']:
+        genderTree.root = genderTree.insertNode(genderTree.root, genData['indicator_value'][goal]['68606']['2019'], genData['country_name'][goal])
+
+    #Generate list of names and data to iterate through in HTML
+    genderTree.inOrderList(genderTree.root, vecGenData, vecGenName)
+    end = time.time()
+
+    #Time for process
+    global avlTimeGen
+    avlTimeGen = str(round(end - start, 6))
+
+def specialStructures():
+    countries = specialCountryGenerator()
+
+    start = time.time()
+    specialTree = AVLTree()
+
+    for c in countries:
+        specialTree.root = specialTree.insertNode(specialTree.root, c.data, c.nameOfCountry)
+
+    specialTree.inOrderList(specialTree.root, vecSpecData, vecSpecName)
+    end = time.time()
+
+    global avlTimeSpec
+    avlTimeSpec = str(round(end - start, 6))
+
+    start = time.time()
+    specHeap = minHeap(100000)
+
+    for c in countries:
+        specHeap.insert(countryNode(c.nameOfCountry, c.data))
+    specHeap.getHeapList(heapSpecData, heapSpecName)
+    end = time.time()
+
+    global heapTimeSpec
+    heapTimeSpec = str(round(end - start, 6))
 
 r = requests.get('https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=true')
 dataGoals = json.loads(r.text)
+
+if __name__ == "__main__":
+    listOfSpecialCountries = specialCountryGenerator()
+    print(len(listOfSpecialCountries))
 
 @app.route('/')
 def home():
@@ -251,11 +677,40 @@ def milestones():
 
 @app.route('/statements')
 def statements():
-    return render_template('statements.html')
+    specialStructures()
+    return render_template('statements.html', 
+        treeData = vecSpecData, treeName = vecSpecName,
+        heapData = heapSpecData, heapName = heapSpecName,
+        treeTime = avlTimeSpec,
+        heapTime = heapTimeSpec
+        )
 
 @app.route('/progress')
 def progress():
-    return render_template('progress.html', povData = vecPovData, povName = vecPovName, genData = vecGenData, genName = vecGenName, timerAVLPov = avlTimePov, timerAVLGen = avlTimeGen)
+    getHeaps()
+    getTrees()
+    return render_template('progress.html', 
+        povData = vecPovData, povName = vecPovName, 
+        povDataH = heapPovData, povNameH = heapPovName, 
+        genData = vecGenData, genName = vecGenName, 
+        genDataH = heapGenData, genNameH = heapGenName,
+        hungerData = vecHungerData, hungerName = vecHungerName,
+        hungerDataH = heapHungerData, hungerNameH = heapHungerName,
+        expData = vecExpData, expName = vecExpName,
+        expDataH = heapExpData, expNameH = heapExpName,
+        litData = vecLitData, litName = vecLitName,
+        litDataH = heapLitData, litNameH = heapLitName,
+        timerAVLPov = avlTimePov, 
+        timerHeapPov = heapTimePov, 
+        timerAVLGen = avlTimeGen, 
+        timerHeapGen = heapTimeGen,
+        timerHeapHunger = heapTimeHunger,
+        timerAVLHunger = avlTimeHunger,
+        timerHeapExp = heapTimeExp,
+        timerAVLExp = avlTimeExp,
+        timerHeapLit = heapTimeLit,
+        timerAVLLit = avlTimeLit
+        )
 
 @app.route('/more-info')
 def moreInfo():

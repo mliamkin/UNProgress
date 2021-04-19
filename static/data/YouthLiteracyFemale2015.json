@@ -1,0 +1,938 @@
+[
+ {
+   "Entity": "Afghanistan",
+   "Code": "AFG",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 46.10599136
+ },
+ {
+   "Entity": "Albania",
+   "Code": "ALB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.08325958
+ },
+ {
+   "Entity": "Algeria",
+   "Code": "DZA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 96.29026031
+ },
+ {
+   "Entity": "Angola",
+   "Code": "AGO",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 67.2890625
+ },
+ {
+   "Entity": "Argentina",
+   "Code": "ARG",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.48284149
+ },
+ {
+   "Entity": "Armenia",
+   "Code": "ARM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.87255859
+ },
+ {
+   "Entity": "Aruba",
+   "Code": "ABW",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.36830902
+ },
+ {
+   "Entity": "Azerbaijan",
+   "Code": "AZE",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.93462372
+ },
+ {
+   "Entity": "Bahrain",
+   "Code": "BHR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.7437973
+ },
+ {
+   "Entity": "Bangladesh",
+   "Code": "BGD",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 85.86644745
+ },
+ {
+   "Entity": "Belarus",
+   "Code": "BLR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.86123657
+ },
+ {
+   "Entity": "Belize",
+   "Code": "BLZ",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 89.9247818
+ },
+ {
+   "Entity": "Benin",
+   "Code": "BEN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 42.50170898
+ },
+ {
+   "Entity": "Bhutan",
+   "Code": "BTN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 90.44759369
+ },
+ {
+   "Entity": "Bolivia",
+   "Code": "BOL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.89202118
+ },
+ {
+   "Entity": "Bosnia and Herzegovina",
+   "Code": "BIH",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.64560699
+ },
+ {
+   "Entity": "Botswana",
+   "Code": "BWA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.50666809
+ },
+ {
+   "Entity": "Brazil",
+   "Code": "BRA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.35749054
+ },
+ {
+   "Entity": "Brunei",
+   "Code": "BRN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.71537781
+ },
+ {
+   "Entity": "Bulgaria",
+   "Code": "BGR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 97.78369141
+ },
+ {
+   "Entity": "Burkina Faso",
+   "Code": "BFA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 46.71192932
+ },
+ {
+   "Entity": "Burundi",
+   "Code": "BDI",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 87.83070374
+ },
+ {
+   "Entity": "Cambodia",
+   "Code": "KHM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 91.96520996
+ },
+ {
+   "Entity": "Cameroon",
+   "Code": "CMR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 80.4466095
+ },
+ {
+   "Entity": "Cape Verde",
+   "Code": "CPV",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.56056976
+ },
+ {
+   "Entity": "Central African Republic",
+   "Code": "CAF",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 26.97132492
+ },
+ {
+   "Entity": "Chad",
+   "Code": "TCD",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 50.17034149
+ },
+ {
+   "Entity": "Chile",
+   "Code": "CHL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.16346741
+ },
+ {
+   "Entity": "China",
+   "Code": "CHN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.71209717
+ },
+ {
+   "Entity": "Colombia",
+   "Code": "COL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.09911346
+ },
+ {
+   "Entity": "Comoros",
+   "Code": "COM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 88.14498138
+ },
+ {
+   "Entity": "Congo",
+   "Code": "COG",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 76.94608307
+ },
+ {
+   "Entity": "Costa Rica",
+   "Code": "CRI",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.42989349
+ },
+ {
+   "Entity": "Cote d'Ivoire",
+   "Code": "CIV",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 40.6954689
+ },
+ {
+   "Entity": "Croatia",
+   "Code": "HRV",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.75435638
+ },
+ {
+   "Entity": "Cuba",
+   "Code": "CUB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.90863037
+ },
+ {
+   "Entity": "Cyprus",
+   "Code": "CYP",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.87934113
+ },
+ {
+   "Entity": "Democratic Republic of Congo",
+   "Code": "COD",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 80.49447632
+ },
+ {
+   "Entity": "Dominican Republic",
+   "Code": "DOM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.21394348
+ },
+ {
+   "Entity": "Ecuador",
+   "Code": "ECU",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.81941986
+ },
+ {
+   "Entity": "Egypt",
+   "Code": "EGY",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 92.07946777
+ },
+ {
+   "Entity": "El Salvador",
+   "Code": "SLV",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 97.89341736
+ },
+ {
+   "Entity": "Equatorial Guinea",
+   "Code": "GNQ",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.802948
+ },
+ {
+   "Entity": "Eritrea",
+   "Code": "ERI",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 91.9473114
+ },
+ {
+   "Entity": "Estonia",
+   "Code": "EST",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.970047
+ },
+ {
+   "Entity": "Eswatini",
+   "Code": "SWZ",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 96.02217102
+ },
+ {
+   "Entity": "Ethiopia",
+   "Code": "ETH",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 67.82324982
+ },
+ {
+   "Entity": "Gabon",
+   "Code": "GAB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 90.50911713
+ },
+ {
+   "Entity": "Gambia",
+   "Code": "GMB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 70.8519516
+ },
+ {
+   "Entity": "Georgia",
+   "Code": "GEO",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.8495636
+ },
+ {
+   "Entity": "Ghana",
+   "Code": "GHA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 89.85401154
+ },
+ {
+   "Entity": "Greece",
+   "Code": "GRC",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.65412903
+ },
+ {
+   "Entity": "Guam",
+   "Code": "GUM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.97496796
+ },
+ {
+   "Entity": "Guatemala",
+   "Code": "GTM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 90.99931335
+ },
+ {
+   "Entity": "Guinea",
+   "Code": "GIN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 47.50688171
+ },
+ {
+   "Entity": "Guinea-Bissau",
+   "Code": "GNB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 73.51181793
+ },
+ {
+   "Entity": "Guyana",
+   "Code": "GUY",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 94.73403931
+ },
+ {
+   "Entity": "Haiti",
+   "Code": "HTI",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 81.57035828
+ },
+ {
+   "Entity": "Honduras",
+   "Code": "HND",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.14961243
+ },
+ {
+   "Entity": "Hungary",
+   "Code": "HUN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.44558716
+ },
+ {
+   "Entity": "India",
+   "Code": "IND",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 87.25669098
+ },
+ {
+   "Entity": "Indonesia",
+   "Code": "IDN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.73020172
+ },
+ {
+   "Entity": "Iran",
+   "Code": "IRN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 97.77127838
+ },
+ {
+   "Entity": "Iraq",
+   "Code": "IRQ",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 80.6118927
+ },
+ {
+   "Entity": "Italy",
+   "Code": "ITA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.92285156
+ },
+ {
+   "Entity": "Jamaica",
+   "Code": "JAM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.83776093
+ },
+ {
+   "Entity": "Jordan",
+   "Code": "JOR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.36840057
+ },
+ {
+   "Entity": "Kazakhstan",
+   "Code": "KAZ",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.8708725
+ },
+ {
+   "Entity": "Kenya",
+   "Code": "KEN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 86.59024811
+ },
+ {
+   "Entity": "Kuwait",
+   "Code": "KWT",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.39012146
+ },
+ {
+   "Entity": "Kyrgyzstan",
+   "Code": "KGZ",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.80480194
+ },
+ {
+   "Entity": "Laos",
+   "Code": "LAO",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 87.28832245
+ },
+ {
+   "Entity": "Latvia",
+   "Code": "LVA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.8657608
+ },
+ {
+   "Entity": "Lebanon",
+   "Code": "LBN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.32208252
+ },
+ {
+   "Entity": "Lesotho",
+   "Code": "LSO",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 93.40403748
+ },
+ {
+   "Entity": "Liberia",
+   "Code": "LBR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 43.96712875
+ },
+ {
+   "Entity": "Libya",
+   "Code": "LBY",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.93405914
+ },
+ {
+   "Entity": "Lithuania",
+   "Code": "LTU",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.92002106
+ },
+ {
+   "Entity": "Macao",
+   "Code": "MAC",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.64539337
+ },
+ {
+   "Entity": "Madagascar",
+   "Code": "MDG",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 64.78170013
+ },
+ {
+   "Entity": "Malawi",
+   "Code": "MWI",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 75.22707367
+ },
+ {
+   "Entity": "Malaysia",
+   "Code": "MYS",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.49781799
+ },
+ {
+   "Entity": "Maldives",
+   "Code": "MDV",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.51159668
+ },
+ {
+   "Entity": "Mali",
+   "Code": "MLI",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 39.20767975
+ },
+ {
+   "Entity": "Malta",
+   "Code": "MLT",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.50237274
+ },
+ {
+   "Entity": "Marshall Islands",
+   "Code": "MHL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.75669861
+ },
+ {
+   "Entity": "Mauritania",
+   "Code": "MRT",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 54.99924088
+ },
+ {
+   "Entity": "Mauritius",
+   "Code": "MUS",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.0851593
+ },
+ {
+   "Entity": "Mexico",
+   "Code": "MEX",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.81214905
+ },
+ {
+   "Entity": "Moldova",
+   "Code": "MDA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.42462921
+ },
+ {
+   "Entity": "Mongolia",
+   "Code": "MNG",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.9798584
+ },
+ {
+   "Entity": "Montenegro",
+   "Code": "MNE",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.00843048
+ },
+ {
+   "Entity": "Morocco",
+   "Code": "MAR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 93.47515106
+ },
+ {
+   "Entity": "Mozambique",
+   "Code": "MOZ",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 69.80744171
+ },
+ {
+   "Entity": "Myanmar",
+   "Code": "MMR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 96.3249588
+ },
+ {
+   "Entity": "Namibia",
+   "Code": "NAM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 95.88809967
+ },
+ {
+   "Entity": "Nepal",
+   "Code": "NPL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 87.4109726
+ },
+ {
+   "Entity": "New Caledonia",
+   "Code": "NCL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.81352997
+ },
+ {
+   "Entity": "Nicaragua",
+   "Code": "NIC",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 93.60542297
+ },
+ {
+   "Entity": "Niger",
+   "Code": "NER",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 17.14718056
+ },
+ {
+   "Entity": "Nigeria",
+   "Code": "NGA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 65.32517242
+ },
+ {
+   "Entity": "North Korea",
+   "Code": "PRK",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.99992371
+ },
+ {
+   "Entity": "North Macedonia",
+   "Code": "MKD",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.48496246
+ },
+ {
+   "Entity": "Oman",
+   "Code": "OMN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.09942627
+ },
+ {
+   "Entity": "Pakistan",
+   "Code": "PAK",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 66.79547119
+ },
+ {
+   "Entity": "Palau",
+   "Code": "PLW",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.82954407
+ },
+ {
+   "Entity": "Palestine",
+   "Code": "PSE",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.32720947
+ },
+ {
+   "Entity": "Panama",
+   "Code": "PAN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 97.99575043
+ },
+ {
+   "Entity": "Papua New Guinea",
+   "Code": "PNG",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 64.05812836
+ },
+ {
+   "Entity": "Paraguay",
+   "Code": "PRY",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.47738647
+ },
+ {
+   "Entity": "Peru",
+   "Code": "PER",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.98439789
+ },
+ {
+   "Entity": "Philippines",
+   "Code": "PHL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.93222046
+ },
+ {
+   "Entity": "Poland",
+   "Code": "POL",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.99997711
+ },
+ {
+   "Entity": "Portugal",
+   "Code": "PRT",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.63111115
+ },
+ {
+   "Entity": "Puerto Rico",
+   "Code": "PRI",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.06291962
+ },
+ {
+   "Entity": "Qatar",
+   "Code": "QAT",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.72827148
+ },
+ {
+   "Entity": "Romania",
+   "Code": "ROU",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.30384064
+ },
+ {
+   "Entity": "Russia",
+   "Code": "RUS",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.75244141
+ },
+ {
+   "Entity": "Rwanda",
+   "Code": "RWA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 86.99488068
+ },
+ {
+   "Entity": "Samoa",
+   "Code": "WSM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.44846344
+ },
+ {
+   "Entity": "Sao Tome and Principe",
+   "Code": "STP",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 97.20092773
+ },
+ {
+   "Entity": "Saudi Arabia",
+   "Code": "SAU",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.31404877
+ },
+ {
+   "Entity": "Senegal",
+   "Code": "SEN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 63.56727982
+ },
+ {
+   "Entity": "Serbia",
+   "Code": "SRB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.39762878
+ },
+ {
+   "Entity": "Seychelles",
+   "Code": "SYC",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.55322266
+ },
+ {
+   "Entity": "Sierra Leone",
+   "Code": "SLE",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 59.16804886
+ },
+ {
+   "Entity": "Singapore",
+   "Code": "SGP",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.9199295
+ },
+ {
+   "Entity": "Slovenia",
+   "Code": "SVN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.91320038
+ },
+ {
+   "Entity": "South Africa",
+   "Code": "ZAF",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.39840698
+ },
+ {
+   "Entity": "South Sudan",
+   "Code": "SSD",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 41.77598953
+ },
+ {
+   "Entity": "Spain",
+   "Code": "ESP",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.72863007
+ },
+ {
+   "Entity": "Sri Lanka",
+   "Code": "LKA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.16533661
+ },
+ {
+   "Entity": "Sudan",
+   "Code": "SDN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 70.41340637
+ },
+ {
+   "Entity": "Suriname",
+   "Code": "SUR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.66081238
+ },
+ {
+   "Entity": "Syria",
+   "Code": "SYR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 95.63101196
+ },
+ {
+   "Entity": "Tajikistan",
+   "Code": "TJK",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.88925934
+ },
+ {
+   "Entity": "Tanzania",
+   "Code": "TZA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 87.16236877
+ },
+ {
+   "Entity": "Thailand",
+   "Code": "THA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.95375824
+ },
+ {
+   "Entity": "Timor",
+   "Code": "TLS",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 82.71225739
+ },
+ {
+   "Entity": "Togo",
+   "Code": "TGO",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 81.40245819
+ },
+ {
+   "Entity": "Tonga",
+   "Code": "TON",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.54416656
+ },
+ {
+   "Entity": "Trinidad and Tobago",
+   "Code": "TTO",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.61884308
+ },
+ {
+   "Entity": "Tunisia",
+   "Code": "TUN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 96.66191101
+ },
+ {
+   "Entity": "Turkey",
+   "Code": "TUR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.1542511
+ },
+ {
+   "Entity": "Turkmenistan",
+   "Code": "TKM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.90960693
+ },
+ {
+   "Entity": "Uganda",
+   "Code": "UGA",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 86.56881714
+ },
+ {
+   "Entity": "Ukraine",
+   "Code": "UKR",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.80661011
+ },
+ {
+   "Entity": "United Arab Emirates",
+   "Code": "ARE",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.11769867
+ },
+ {
+   "Entity": "Uruguay",
+   "Code": "URY",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 99.40540314
+ },
+ {
+   "Entity": "Uzbekistan",
+   "Code": "UZB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 100
+ },
+ {
+   "Entity": "Vanuatu",
+   "Code": "VUT",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 95.95143127
+ },
+ {
+   "Entity": "Venezuela",
+   "Code": "VEN",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 98.34734344
+ },
+ {
+   "Entity": "Vietnam",
+   "Code": "VNM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 97.96372986
+ },
+ {
+   "Entity": "Yemen",
+   "Code": "YEM",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 82.66047668
+ },
+ {
+   "Entity": "Zambia",
+   "Code": "ZMB",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 90.62821198
+ },
+ {
+   "Entity": "Zimbabwe",
+   "Code": "ZWE",
+   "Year": 2015,
+   "Youth literacy rate, population 15-24 years, female (%)": 93.50234985
+ }
+]

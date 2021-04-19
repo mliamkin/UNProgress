@@ -1,0 +1,1460 @@
+[
+ {
+   "Entity": "Afghanistan",
+   "Code": "AFG",
+   "Year": 2019,
+   "Life expectancy": 64.833
+ },
+ {
+   "Entity": "Africa",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 63.17
+ },
+ {
+   "Entity": "Albania",
+   "Code": "ALB",
+   "Year": 2019,
+   "Life expectancy": 78.573
+ },
+ {
+   "Entity": "Algeria",
+   "Code": "DZA",
+   "Year": 2019,
+   "Life expectancy": 76.88
+ },
+ {
+   "Entity": "American Samoa",
+   "Code": "ASM",
+   "Year": 2019,
+   "Life expectancy": 73.745
+ },
+ {
+   "Entity": "Americas",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 76.83538896
+ },
+ {
+   "Entity": "Andorra",
+   "Code": "AND",
+   "Year": 2019,
+   "Life expectancy": 83.732
+ },
+ {
+   "Entity": "Angola",
+   "Code": "AGO",
+   "Year": 2019,
+   "Life expectancy": 61.147
+ },
+ {
+   "Entity": "Anguilla",
+   "Code": "AIA",
+   "Year": 2019,
+   "Life expectancy": 81.877
+ },
+ {
+   "Entity": "Antigua and Barbuda",
+   "Code": "ATG",
+   "Year": 2019,
+   "Life expectancy": 77.016
+ },
+ {
+   "Entity": "Argentina",
+   "Code": "ARG",
+   "Year": 2019,
+   "Life expectancy": 76.667
+ },
+ {
+   "Entity": "Armenia",
+   "Code": "ARM",
+   "Year": 2019,
+   "Life expectancy": 75.087
+ },
+ {
+   "Entity": "Aruba",
+   "Code": "ABW",
+   "Year": 2019,
+   "Life expectancy": 76.293
+ },
+ {
+   "Entity": "Asia",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 73.593
+ },
+ {
+   "Entity": "Australia",
+   "Code": "AUS",
+   "Year": 2019,
+   "Life expectancy": 83.436
+ },
+ {
+   "Entity": "Austria",
+   "Code": "AUT",
+   "Year": 2019,
+   "Life expectancy": 81.544
+ },
+ {
+   "Entity": "Azerbaijan",
+   "Code": "AZE",
+   "Year": 2019,
+   "Life expectancy": 73.005
+ },
+ {
+   "Entity": "Bahamas",
+   "Code": "BHS",
+   "Year": 2019,
+   "Life expectancy": 73.918
+ },
+ {
+   "Entity": "Bahrain",
+   "Code": "BHR",
+   "Year": 2019,
+   "Life expectancy": 77.292
+ },
+ {
+   "Entity": "Bangladesh",
+   "Code": "BGD",
+   "Year": 2019,
+   "Life expectancy": 72.591
+ },
+ {
+   "Entity": "Barbados",
+   "Code": "BRB",
+   "Year": 2019,
+   "Life expectancy": 79.19
+ },
+ {
+   "Entity": "Belarus",
+   "Code": "BLR",
+   "Year": 2019,
+   "Life expectancy": 74.791
+ },
+ {
+   "Entity": "Belgium",
+   "Code": "BEL",
+   "Year": 2019,
+   "Life expectancy": 81.628
+ },
+ {
+   "Entity": "Belize",
+   "Code": "BLZ",
+   "Year": 2019,
+   "Life expectancy": 74.623
+ },
+ {
+   "Entity": "Benin",
+   "Code": "BEN",
+   "Year": 2019,
+   "Life expectancy": 61.771
+ },
+ {
+   "Entity": "Bermuda",
+   "Code": "BMU",
+   "Year": 2019,
+   "Life expectancy": 82.593
+ },
+ {
+   "Entity": "Bhutan",
+   "Code": "BTN",
+   "Year": 2019,
+   "Life expectancy": 71.777
+ },
+ {
+   "Entity": "Bolivia",
+   "Code": "BOL",
+   "Year": 2019,
+   "Life expectancy": 71.513
+ },
+ {
+   "Entity": "Bonaire Sint Eustatius and Saba",
+   "Code": "BES",
+   "Year": 2019,
+   "Life expectancy": 77.788
+ },
+ {
+   "Entity": "Bosnia and Herzegovina",
+   "Code": "BIH",
+   "Year": 2019,
+   "Life expectancy": 77.401
+ },
+ {
+   "Entity": "Botswana",
+   "Code": "BWA",
+   "Year": 2019,
+   "Life expectancy": 69.592
+ },
+ {
+   "Entity": "Brazil",
+   "Code": "BRA",
+   "Year": 2019,
+   "Life expectancy": 75.881
+ },
+ {
+   "Entity": "British Virgin Islands",
+   "Code": "VGB",
+   "Year": 2019,
+   "Life expectancy": 79.069
+ },
+ {
+   "Entity": "Brunei",
+   "Code": "BRN",
+   "Year": 2019,
+   "Life expectancy": 75.86
+ },
+ {
+   "Entity": "Bulgaria",
+   "Code": "BGR",
+   "Year": 2019,
+   "Life expectancy": 75.046
+ },
+ {
+   "Entity": "Burkina Faso",
+   "Code": "BFA",
+   "Year": 2019,
+   "Life expectancy": 61.577
+ },
+ {
+   "Entity": "Burundi",
+   "Code": "BDI",
+   "Year": 2019,
+   "Life expectancy": 61.584
+ },
+ {
+   "Entity": "Cambodia",
+   "Code": "KHM",
+   "Year": 2019,
+   "Life expectancy": 69.823
+ },
+ {
+   "Entity": "Cameroon",
+   "Code": "CMR",
+   "Year": 2019,
+   "Life expectancy": 59.292
+ },
+ {
+   "Entity": "Canada",
+   "Code": "CAN",
+   "Year": 2019,
+   "Life expectancy": 82.434
+ },
+ {
+   "Entity": "Cape Verde",
+   "Code": "CPV",
+   "Year": 2019,
+   "Life expectancy": 72.981
+ },
+ {
+   "Entity": "Cayman Islands",
+   "Code": "CYM",
+   "Year": 2019,
+   "Life expectancy": 83.924
+ },
+ {
+   "Entity": "Central African Republic",
+   "Code": "CAF",
+   "Year": 2019,
+   "Life expectancy": 53.283
+ },
+ {
+   "Entity": "Chad",
+   "Code": "TCD",
+   "Year": 2019,
+   "Life expectancy": 54.239
+ },
+ {
+   "Entity": "Channel Islands",
+   "Code": "OWID_CIS",
+   "Year": 2019,
+   "Life expectancy": 83.086
+ },
+ {
+   "Entity": "Chile",
+   "Code": "CHL",
+   "Year": 2019,
+   "Life expectancy": 80.181
+ },
+ {
+   "Entity": "China",
+   "Code": "CHN",
+   "Year": 2019,
+   "Life expectancy": 76.912
+ },
+ {
+   "Entity": "Colombia",
+   "Code": "COL",
+   "Year": 2019,
+   "Life expectancy": 77.287
+ },
+ {
+   "Entity": "Comoros",
+   "Code": "COM",
+   "Year": 2019,
+   "Life expectancy": 64.321
+ },
+ {
+   "Entity": "Congo",
+   "Code": "COG",
+   "Year": 2019,
+   "Life expectancy": 64.57
+ },
+ {
+   "Entity": "Cook Islands",
+   "Code": "COK",
+   "Year": 2019,
+   "Life expectancy": 76.246
+ },
+ {
+   "Entity": "Costa Rica",
+   "Code": "CRI",
+   "Year": 2019,
+   "Life expectancy": 80.279
+ },
+ {
+   "Entity": "Cote d'Ivoire",
+   "Code": "CIV",
+   "Year": 2019,
+   "Life expectancy": 57.783
+ },
+ {
+   "Entity": "Croatia",
+   "Code": "HRV",
+   "Year": 2019,
+   "Life expectancy": 78.488
+ },
+ {
+   "Entity": "Cuba",
+   "Code": "CUB",
+   "Year": 2019,
+   "Life expectancy": 78.802
+ },
+ {
+   "Entity": "Curacao",
+   "Code": "CUW",
+   "Year": 2019,
+   "Life expectancy": 78.88
+ },
+ {
+   "Entity": "Cyprus",
+   "Code": "CYP",
+   "Year": 2019,
+   "Life expectancy": 80.982
+ },
+ {
+   "Entity": "Czechia",
+   "Code": "CZE",
+   "Year": 2019,
+   "Life expectancy": 79.376
+ },
+ {
+   "Entity": "Democratic Republic of Congo",
+   "Code": "COD",
+   "Year": 2019,
+   "Life expectancy": 60.681
+ },
+ {
+   "Entity": "Denmark",
+   "Code": "DNK",
+   "Year": 2019,
+   "Life expectancy": 80.898
+ },
+ {
+   "Entity": "Djibouti",
+   "Code": "DJI",
+   "Year": 2019,
+   "Life expectancy": 67.112
+ },
+ {
+   "Entity": "Dominica",
+   "Code": "DMA",
+   "Year": 2019,
+   "Life expectancy": 75
+ },
+ {
+   "Entity": "Dominican Republic",
+   "Code": "DOM",
+   "Year": 2019,
+   "Life expectancy": 74.081
+ },
+ {
+   "Entity": "Ecuador",
+   "Code": "ECU",
+   "Year": 2019,
+   "Life expectancy": 77.01
+ },
+ {
+   "Entity": "Egypt",
+   "Code": "EGY",
+   "Year": 2019,
+   "Life expectancy": 71.99
+ },
+ {
+   "Entity": "El Salvador",
+   "Code": "SLV",
+   "Year": 2019,
+   "Life expectancy": 73.317
+ },
+ {
+   "Entity": "Equatorial Guinea",
+   "Code": "GNQ",
+   "Year": 2019,
+   "Life expectancy": 58.735
+ },
+ {
+   "Entity": "Eritrea",
+   "Code": "ERI",
+   "Year": 2019,
+   "Life expectancy": 66.321
+ },
+ {
+   "Entity": "Estonia",
+   "Code": "EST",
+   "Year": 2019,
+   "Life expectancy": 78.745
+ },
+ {
+   "Entity": "Eswatini",
+   "Code": "SWZ",
+   "Year": 2019,
+   "Life expectancy": 60.194
+ },
+ {
+   "Entity": "Ethiopia",
+   "Code": "ETH",
+   "Year": 2019,
+   "Life expectancy": 66.597
+ },
+ {
+   "Entity": "Europe",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 78.587
+ },
+ {
+   "Entity": "Faeroe Islands",
+   "Code": "FRO",
+   "Year": 2019,
+   "Life expectancy": 80.666
+ },
+ {
+   "Entity": "Falkland Islands",
+   "Code": "FLK",
+   "Year": 2019,
+   "Life expectancy": 81.442
+ },
+ {
+   "Entity": "Fiji",
+   "Code": "FJI",
+   "Year": 2019,
+   "Life expectancy": 67.444
+ },
+ {
+   "Entity": "Finland",
+   "Code": "FIN",
+   "Year": 2019,
+   "Life expectancy": 81.908
+ },
+ {
+   "Entity": "France",
+   "Code": "FRA",
+   "Year": 2019,
+   "Life expectancy": 82.659
+ },
+ {
+   "Entity": "French Guiana",
+   "Code": "GUF",
+   "Year": 2019,
+   "Life expectancy": 79.952
+ },
+ {
+   "Entity": "French Polynesia",
+   "Code": "PYF",
+   "Year": 2019,
+   "Life expectancy": 77.657
+ },
+ {
+   "Entity": "Gabon",
+   "Code": "GAB",
+   "Year": 2019,
+   "Life expectancy": 66.467
+ },
+ {
+   "Entity": "Gambia",
+   "Code": "GMB",
+   "Year": 2019,
+   "Life expectancy": 62.05
+ },
+ {
+   "Entity": "Georgia",
+   "Code": "GEO",
+   "Year": 2019,
+   "Life expectancy": 73.767
+ },
+ {
+   "Entity": "Germany",
+   "Code": "DEU",
+   "Year": 2019,
+   "Life expectancy": 81.326
+ },
+ {
+   "Entity": "Ghana",
+   "Code": "GHA",
+   "Year": 2019,
+   "Life expectancy": 64.074
+ },
+ {
+   "Entity": "Gibraltar",
+   "Code": "GIB",
+   "Year": 2019,
+   "Life expectancy": 79.927
+ },
+ {
+   "Entity": "Greece",
+   "Code": "GRC",
+   "Year": 2019,
+   "Life expectancy": 82.239
+ },
+ {
+   "Entity": "Greenland",
+   "Code": "GRL",
+   "Year": 2019,
+   "Life expectancy": 71.704
+ },
+ {
+   "Entity": "Grenada",
+   "Code": "GRD",
+   "Year": 2019,
+   "Life expectancy": 72.397
+ },
+ {
+   "Entity": "Guadeloupe",
+   "Code": "GLP",
+   "Year": 2019,
+   "Life expectancy": 82.138
+ },
+ {
+   "Entity": "Guam",
+   "Code": "GUM",
+   "Year": 2019,
+   "Life expectancy": 80.074
+ },
+ {
+   "Entity": "Guatemala",
+   "Code": "GTM",
+   "Year": 2019,
+   "Life expectancy": 74.302
+ },
+ {
+   "Entity": "Guinea",
+   "Code": "GIN",
+   "Year": 2019,
+   "Life expectancy": 61.602
+ },
+ {
+   "Entity": "Guinea-Bissau",
+   "Code": "GNB",
+   "Year": 2019,
+   "Life expectancy": 58.322
+ },
+ {
+   "Entity": "Guyana",
+   "Code": "GUY",
+   "Year": 2019,
+   "Life expectancy": 69.906
+ },
+ {
+   "Entity": "Haiti",
+   "Code": "HTI",
+   "Year": 2019,
+   "Life expectancy": 64.001
+ },
+ {
+   "Entity": "Honduras",
+   "Code": "HND",
+   "Year": 2019,
+   "Life expectancy": 75.27
+ },
+ {
+   "Entity": "Hong Kong",
+   "Code": "HKG",
+   "Year": 2019,
+   "Life expectancy": 84.857
+ },
+ {
+   "Entity": "Hungary",
+   "Code": "HUN",
+   "Year": 2019,
+   "Life expectancy": 76.875
+ },
+ {
+   "Entity": "Iceland",
+   "Code": "ISL",
+   "Year": 2019,
+   "Life expectancy": 82.993
+ },
+ {
+   "Entity": "India",
+   "Code": "IND",
+   "Year": 2019,
+   "Life expectancy": 69.656
+ },
+ {
+   "Entity": "Indonesia",
+   "Code": "IDN",
+   "Year": 2019,
+   "Life expectancy": 71.716
+ },
+ {
+   "Entity": "Iran",
+   "Code": "IRN",
+   "Year": 2019,
+   "Life expectancy": 76.677
+ },
+ {
+   "Entity": "Iraq",
+   "Code": "IRQ",
+   "Year": 2019,
+   "Life expectancy": 70.604
+ },
+ {
+   "Entity": "Ireland",
+   "Code": "IRL",
+   "Year": 2019,
+   "Life expectancy": 82.305
+ },
+ {
+   "Entity": "Isle of Man",
+   "Code": "IMN",
+   "Year": 2019,
+   "Life expectancy": 81.396
+ },
+ {
+   "Entity": "Israel",
+   "Code": "ISR",
+   "Year": 2019,
+   "Life expectancy": 82.972
+ },
+ {
+   "Entity": "Italy",
+   "Code": "ITA",
+   "Year": 2019,
+   "Life expectancy": 83.512
+ },
+ {
+   "Entity": "Jamaica",
+   "Code": "JAM",
+   "Year": 2019,
+   "Life expectancy": 74.475
+ },
+ {
+   "Entity": "Japan",
+   "Code": "JPN",
+   "Year": 2019,
+   "Life expectancy": 84.629
+ },
+ {
+   "Entity": "Jordan",
+   "Code": "JOR",
+   "Year": 2019,
+   "Life expectancy": 74.526
+ },
+ {
+   "Entity": "Kazakhstan",
+   "Code": "KAZ",
+   "Year": 2019,
+   "Life expectancy": 73.597
+ },
+ {
+   "Entity": "Kenya",
+   "Code": "KEN",
+   "Year": 2019,
+   "Life expectancy": 66.699
+ },
+ {
+   "Entity": "Kiribati",
+   "Code": "KIR",
+   "Year": 2019,
+   "Life expectancy": 68.369
+ },
+ {
+   "Entity": "Kuwait",
+   "Code": "KWT",
+   "Year": 2019,
+   "Life expectancy": 75.489
+ },
+ {
+   "Entity": "Kyrgyzstan",
+   "Code": "KGZ",
+   "Year": 2019,
+   "Life expectancy": 71.45
+ },
+ {
+   "Entity": "Laos",
+   "Code": "LAO",
+   "Year": 2019,
+   "Life expectancy": 67.923
+ },
+ {
+   "Entity": "Latin America and the Caribbean",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 75.486
+ },
+ {
+   "Entity": "Latvia",
+   "Code": "LVA",
+   "Year": 2019,
+   "Life expectancy": 75.292
+ },
+ {
+   "Entity": "Lebanon",
+   "Code": "LBN",
+   "Year": 2019,
+   "Life expectancy": 78.93
+ },
+ {
+   "Entity": "Lesotho",
+   "Code": "LSO",
+   "Year": 2019,
+   "Life expectancy": 54.331
+ },
+ {
+   "Entity": "Liberia",
+   "Code": "LBR",
+   "Year": 2019,
+   "Life expectancy": 64.104
+ },
+ {
+   "Entity": "Libya",
+   "Code": "LBY",
+   "Year": 2019,
+   "Life expectancy": 72.913
+ },
+ {
+   "Entity": "Liechtenstein",
+   "Code": "LIE",
+   "Year": 2019,
+   "Life expectancy": 82.494
+ },
+ {
+   "Entity": "Lithuania",
+   "Code": "LTU",
+   "Year": 2019,
+   "Life expectancy": 75.933
+ },
+ {
+   "Entity": "Luxembourg",
+   "Code": "LUX",
+   "Year": 2019,
+   "Life expectancy": 82.25
+ },
+ {
+   "Entity": "Macao",
+   "Code": "MAC",
+   "Year": 2019,
+   "Life expectancy": 84.244
+ },
+ {
+   "Entity": "Madagascar",
+   "Code": "MDG",
+   "Year": 2019,
+   "Life expectancy": 67.041
+ },
+ {
+   "Entity": "Malawi",
+   "Code": "MWI",
+   "Year": 2019,
+   "Life expectancy": 64.263
+ },
+ {
+   "Entity": "Malaysia",
+   "Code": "MYS",
+   "Year": 2019,
+   "Life expectancy": 76.156
+ },
+ {
+   "Entity": "Maldives",
+   "Code": "MDV",
+   "Year": 2019,
+   "Life expectancy": 78.921
+ },
+ {
+   "Entity": "Mali",
+   "Code": "MLI",
+   "Year": 2019,
+   "Life expectancy": 59.306
+ },
+ {
+   "Entity": "Malta",
+   "Code": "MLT",
+   "Year": 2019,
+   "Life expectancy": 82.53
+ },
+ {
+   "Entity": "Marshall Islands",
+   "Code": "MHL",
+   "Year": 2019,
+   "Life expectancy": 73.696
+ },
+ {
+   "Entity": "Martinique",
+   "Code": "MTQ",
+   "Year": 2019,
+   "Life expectancy": 82.545
+ },
+ {
+   "Entity": "Mauritania",
+   "Code": "MRT",
+   "Year": 2019,
+   "Life expectancy": 64.925
+ },
+ {
+   "Entity": "Mauritius",
+   "Code": "MUS",
+   "Year": 2019,
+   "Life expectancy": 74.991
+ },
+ {
+   "Entity": "Mayotte",
+   "Code": "MYT",
+   "Year": 2019,
+   "Life expectancy": 79.455
+ },
+ {
+   "Entity": "Mexico",
+   "Code": "MEX",
+   "Year": 2019,
+   "Life expectancy": 75.054
+ },
+ {
+   "Entity": "Micronesia (country)",
+   "Code": "FSM",
+   "Year": 2019,
+   "Life expectancy": 67.883
+ },
+ {
+   "Entity": "Moldova",
+   "Code": "MDA",
+   "Year": 2019,
+   "Life expectancy": 71.901
+ },
+ {
+   "Entity": "Monaco",
+   "Code": "MCO",
+   "Year": 2019,
+   "Life expectancy": 86.751
+ },
+ {
+   "Entity": "Mongolia",
+   "Code": "MNG",
+   "Year": 2019,
+   "Life expectancy": 69.87
+ },
+ {
+   "Entity": "Montenegro",
+   "Code": "MNE",
+   "Year": 2019,
+   "Life expectancy": 76.884
+ },
+ {
+   "Entity": "Montserrat",
+   "Code": "MSR",
+   "Year": 2019,
+   "Life expectancy": 74.158
+ },
+ {
+   "Entity": "Morocco",
+   "Code": "MAR",
+   "Year": 2019,
+   "Life expectancy": 76.68
+ },
+ {
+   "Entity": "Mozambique",
+   "Code": "MOZ",
+   "Year": 2019,
+   "Life expectancy": 60.854
+ },
+ {
+   "Entity": "Myanmar",
+   "Code": "MMR",
+   "Year": 2019,
+   "Life expectancy": 67.134
+ },
+ {
+   "Entity": "Namibia",
+   "Code": "NAM",
+   "Year": 2019,
+   "Life expectancy": 63.708
+ },
+ {
+   "Entity": "Nauru",
+   "Code": "NRU",
+   "Year": 2019,
+   "Life expectancy": 59.962
+ },
+ {
+   "Entity": "Nepal",
+   "Code": "NPL",
+   "Year": 2019,
+   "Life expectancy": 70.778
+ },
+ {
+   "Entity": "Netherlands",
+   "Code": "NLD",
+   "Year": 2019,
+   "Life expectancy": 82.283
+ },
+ {
+   "Entity": "New Caledonia",
+   "Code": "NCL",
+   "Year": 2019,
+   "Life expectancy": 77.55
+ },
+ {
+   "Entity": "New Zealand",
+   "Code": "NZL",
+   "Year": 2019,
+   "Life expectancy": 82.288
+ },
+ {
+   "Entity": "Nicaragua",
+   "Code": "NIC",
+   "Year": 2019,
+   "Life expectancy": 74.485
+ },
+ {
+   "Entity": "Niger",
+   "Code": "NER",
+   "Year": 2019,
+   "Life expectancy": 62.42
+ },
+ {
+   "Entity": "Nigeria",
+   "Code": "NGA",
+   "Year": 2019,
+   "Life expectancy": 54.687
+ },
+ {
+   "Entity": "Niue",
+   "Code": "NIU",
+   "Year": 2019,
+   "Life expectancy": 73.708
+ },
+ {
+   "Entity": "North Korea",
+   "Code": "PRK",
+   "Year": 2019,
+   "Life expectancy": 72.274
+ },
+ {
+   "Entity": "North Macedonia",
+   "Code": "MKD",
+   "Year": 2019,
+   "Life expectancy": 75.797
+ },
+ {
+   "Entity": "Northern America",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 79.221
+ },
+ {
+   "Entity": "Northern Mariana Islands",
+   "Code": "MNP",
+   "Year": 2019,
+   "Life expectancy": 76.735
+ },
+ {
+   "Entity": "Norway",
+   "Code": "NOR",
+   "Year": 2019,
+   "Life expectancy": 82.404
+ },
+ {
+   "Entity": "Oceania",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 78.71
+ },
+ {
+   "Entity": "Oman",
+   "Code": "OMN",
+   "Year": 2019,
+   "Life expectancy": 77.861
+ },
+ {
+   "Entity": "Pakistan",
+   "Code": "PAK",
+   "Year": 2019,
+   "Life expectancy": 67.273
+ },
+ {
+   "Entity": "Palau",
+   "Code": "PLW",
+   "Year": 2019,
+   "Life expectancy": 73.701
+ },
+ {
+   "Entity": "Palestine",
+   "Code": "PSE",
+   "Year": 2019,
+   "Life expectancy": 74.053
+ },
+ {
+   "Entity": "Panama",
+   "Code": "PAN",
+   "Year": 2019,
+   "Life expectancy": 78.506
+ },
+ {
+   "Entity": "Papua New Guinea",
+   "Code": "PNG",
+   "Year": 2019,
+   "Life expectancy": 64.501
+ },
+ {
+   "Entity": "Paraguay",
+   "Code": "PRY",
+   "Year": 2019,
+   "Life expectancy": 74.254
+ },
+ {
+   "Entity": "Peru",
+   "Code": "PER",
+   "Year": 2019,
+   "Life expectancy": 76.736
+ },
+ {
+   "Entity": "Philippines",
+   "Code": "PHL",
+   "Year": 2019,
+   "Life expectancy": 71.231
+ },
+ {
+   "Entity": "Poland",
+   "Code": "POL",
+   "Year": 2019,
+   "Life expectancy": 78.73
+ },
+ {
+   "Entity": "Portugal",
+   "Code": "PRT",
+   "Year": 2019,
+   "Life expectancy": 82.049
+ },
+ {
+   "Entity": "Puerto Rico",
+   "Code": "PRI",
+   "Year": 2019,
+   "Life expectancy": 80.104
+ },
+ {
+   "Entity": "Qatar",
+   "Code": "QAT",
+   "Year": 2019,
+   "Life expectancy": 80.227
+ },
+ {
+   "Entity": "Reunion",
+   "Code": "REU",
+   "Year": 2019,
+   "Life expectancy": 80.484
+ },
+ {
+   "Entity": "Romania",
+   "Code": "ROU",
+   "Year": 2019,
+   "Life expectancy": 76.054
+ },
+ {
+   "Entity": "Russia",
+   "Code": "RUS",
+   "Year": 2019,
+   "Life expectancy": 72.584
+ },
+ {
+   "Entity": "Rwanda",
+   "Code": "RWA",
+   "Year": 2019,
+   "Life expectancy": 69.024
+ },
+ {
+   "Entity": "Saint Barthlemy",
+   "Code": "",
+   "Year": 2019,
+   "Life expectancy": 82.023
+ },
+ {
+   "Entity": "Saint Helena",
+   "Code": "SHN",
+   "Year": 2019,
+   "Life expectancy": 80.558
+ },
+ {
+   "Entity": "Saint Kitts and Nevis",
+   "Code": "KNA",
+   "Year": 2019,
+   "Life expectancy": 76.226
+ },
+ {
+   "Entity": "Saint Lucia",
+   "Code": "LCA",
+   "Year": 2019,
+   "Life expectancy": 76.203
+ },
+ {
+   "Entity": "Saint Martin (French part)",
+   "Code": "MAF",
+   "Year": 2019,
+   "Life expectancy": 82.076
+ },
+ {
+   "Entity": "Saint Pierre and Miquelon",
+   "Code": "SPM",
+   "Year": 2019,
+   "Life expectancy": 81.068
+ },
+ {
+   "Entity": "Saint Vincent and the Grenadines",
+   "Code": "VCT",
+   "Year": 2019,
+   "Life expectancy": 72.534
+ },
+ {
+   "Entity": "Samoa",
+   "Code": "WSM",
+   "Year": 2019,
+   "Life expectancy": 73.321
+ },
+ {
+   "Entity": "San Marino",
+   "Code": "SMR",
+   "Year": 2019,
+   "Life expectancy": 84.972
+ },
+ {
+   "Entity": "Sao Tome and Principe",
+   "Code": "STP",
+   "Year": 2019,
+   "Life expectancy": 70.385
+ },
+ {
+   "Entity": "Saudi Arabia",
+   "Code": "SAU",
+   "Year": 2019,
+   "Life expectancy": 75.133
+ },
+ {
+   "Entity": "Senegal",
+   "Code": "SEN",
+   "Year": 2019,
+   "Life expectancy": 67.941
+ },
+ {
+   "Entity": "Serbia",
+   "Code": "SRB",
+   "Year": 2019,
+   "Life expectancy": 76.001
+ },
+ {
+   "Entity": "Seychelles",
+   "Code": "SYC",
+   "Year": 2019,
+   "Life expectancy": 73.402
+ },
+ {
+   "Entity": "Sierra Leone",
+   "Code": "SLE",
+   "Year": 2019,
+   "Life expectancy": 54.696
+ },
+ {
+   "Entity": "Singapore",
+   "Code": "SGP",
+   "Year": 2019,
+   "Life expectancy": 83.62
+ },
+ {
+   "Entity": "Sint Maarten (Dutch part)",
+   "Code": "SXM",
+   "Year": 2019,
+   "Life expectancy": 78.951
+ },
+ {
+   "Entity": "Slovakia",
+   "Code": "SVK",
+   "Year": 2019,
+   "Life expectancy": 77.542
+ },
+ {
+   "Entity": "Slovenia",
+   "Code": "SVN",
+   "Year": 2019,
+   "Life expectancy": 81.324
+ },
+ {
+   "Entity": "Solomon Islands",
+   "Code": "SLB",
+   "Year": 2019,
+   "Life expectancy": 72.996
+ },
+ {
+   "Entity": "Somalia",
+   "Code": "SOM",
+   "Year": 2019,
+   "Life expectancy": 57.397
+ },
+ {
+   "Entity": "South Africa",
+   "Code": "ZAF",
+   "Year": 2019,
+   "Life expectancy": 64.131
+ },
+ {
+   "Entity": "South Korea",
+   "Code": "KOR",
+   "Year": 2019,
+   "Life expectancy": 83.033
+ },
+ {
+   "Entity": "South Sudan",
+   "Code": "SSD",
+   "Year": 2019,
+   "Life expectancy": 57.846
+ },
+ {
+   "Entity": "Spain",
+   "Code": "ESP",
+   "Year": 2019,
+   "Life expectancy": 83.565
+ },
+ {
+   "Entity": "Sri Lanka",
+   "Code": "LKA",
+   "Year": 2019,
+   "Life expectancy": 76.978
+ },
+ {
+   "Entity": "Sudan",
+   "Code": "SDN",
+   "Year": 2019,
+   "Life expectancy": 65.311
+ },
+ {
+   "Entity": "Suriname",
+   "Code": "SUR",
+   "Year": 2019,
+   "Life expectancy": 71.682
+ },
+ {
+   "Entity": "Sweden",
+   "Code": "SWE",
+   "Year": 2019,
+   "Life expectancy": 82.797
+ },
+ {
+   "Entity": "Switzerland",
+   "Code": "CHE",
+   "Year": 2019,
+   "Life expectancy": 83.779
+ },
+ {
+   "Entity": "Syria",
+   "Code": "SYR",
+   "Year": 2019,
+   "Life expectancy": 72.697
+ },
+ {
+   "Entity": "Taiwan",
+   "Code": "TWN",
+   "Year": 2019,
+   "Life expectancy": 80.456
+ },
+ {
+   "Entity": "Tajikistan",
+   "Code": "TJK",
+   "Year": 2019,
+   "Life expectancy": 71.097
+ },
+ {
+   "Entity": "Tanzania",
+   "Code": "TZA",
+   "Year": 2019,
+   "Life expectancy": 65.456
+ },
+ {
+   "Entity": "Thailand",
+   "Code": "THA",
+   "Year": 2019,
+   "Life expectancy": 77.15
+ },
+ {
+   "Entity": "Timor",
+   "Code": "TLS",
+   "Year": 2019,
+   "Life expectancy": 69.495
+ },
+ {
+   "Entity": "Togo",
+   "Code": "TGO",
+   "Year": 2019,
+   "Life expectancy": 61.042
+ },
+ {
+   "Entity": "Tokelau",
+   "Code": "TKL",
+   "Year": 2019,
+   "Life expectancy": 81.86
+ },
+ {
+   "Entity": "Tonga",
+   "Code": "TON",
+   "Year": 2019,
+   "Life expectancy": 70.907
+ },
+ {
+   "Entity": "Trinidad and Tobago",
+   "Code": "TTO",
+   "Year": 2019,
+   "Life expectancy": 73.507
+ },
+ {
+   "Entity": "Tunisia",
+   "Code": "TUN",
+   "Year": 2019,
+   "Life expectancy": 76.699
+ },
+ {
+   "Entity": "Turkey",
+   "Code": "TUR",
+   "Year": 2019,
+   "Life expectancy": 77.691
+ },
+ {
+   "Entity": "Turkmenistan",
+   "Code": "TKM",
+   "Year": 2019,
+   "Life expectancy": 68.191
+ },
+ {
+   "Entity": "Turks and Caicos Islands",
+   "Code": "TCA",
+   "Year": 2019,
+   "Life expectancy": 80.222
+ },
+ {
+   "Entity": "Tuvalu",
+   "Code": "TUV",
+   "Year": 2019,
+   "Life expectancy": 67.567
+ },
+ {
+   "Entity": "Uganda",
+   "Code": "UGA",
+   "Year": 2019,
+   "Life expectancy": 63.368
+ },
+ {
+   "Entity": "Ukraine",
+   "Code": "UKR",
+   "Year": 2019,
+   "Life expectancy": 72.065
+ },
+ {
+   "Entity": "United Arab Emirates",
+   "Code": "ARE",
+   "Year": 2019,
+   "Life expectancy": 77.972
+ },
+ {
+   "Entity": "United Kingdom",
+   "Code": "GBR",
+   "Year": 2019,
+   "Life expectancy": 81.321
+ },
+ {
+   "Entity": "United States",
+   "Code": "USA",
+   "Year": 2019,
+   "Life expectancy": 78.862
+ },
+ {
+   "Entity": "United States Virgin Islands",
+   "Code": "VIR",
+   "Year": 2019,
+   "Life expectancy": 80.583
+ },
+ {
+   "Entity": "Uruguay",
+   "Code": "URY",
+   "Year": 2019,
+   "Life expectancy": 77.911
+ },
+ {
+   "Entity": "Uzbekistan",
+   "Code": "UZB",
+   "Year": 2019,
+   "Life expectancy": 71.725
+ },
+ {
+   "Entity": "Vanuatu",
+   "Code": "VUT",
+   "Year": 2019,
+   "Life expectancy": 70.474
+ },
+ {
+   "Entity": "Vatican",
+   "Code": "VAT",
+   "Year": 2019,
+   "Life expectancy": 75.125
+ },
+ {
+   "Entity": "Venezuela",
+   "Code": "VEN",
+   "Year": 2019,
+   "Life expectancy": 72.064
+ },
+ {
+   "Entity": "Vietnam",
+   "Code": "VNM",
+   "Year": 2019,
+   "Life expectancy": 75.4
+ },
+ {
+   "Entity": "Wallis and Futuna",
+   "Code": "WLF",
+   "Year": 2019,
+   "Life expectancy": 79.944
+ },
+ {
+   "Entity": "Western Sahara",
+   "Code": "ESH",
+   "Year": 2019,
+   "Life expectancy": 70.263
+ },
+ {
+   "Entity": "World",
+   "Code": "OWID_WRL",
+   "Year": 2019,
+   "Life expectancy": 72.584
+ },
+ {
+   "Entity": "Yemen",
+   "Code": "YEM",
+   "Year": 2019,
+   "Life expectancy": 66.125
+ },
+ {
+   "Entity": "Zambia",
+   "Code": "ZMB",
+   "Year": 2019,
+   "Life expectancy": 63.886
+ },
+ {
+   "Entity": "Zimbabwe",
+   "Code": "ZWE",
+   "Year": 2019,
+   "Life expectancy": 61.49
+ }
+]
