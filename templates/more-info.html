@@ -1,3 +1,243 @@
+<!-- <html>
+    <head>
+        <title>UN Problems</title>
+        <link rel="icon" type="image/png" href="static/globeIcon.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/fa23f1c4df.js" crossorigin="anonymous"></script>
+        <style>
+            .topbar, .logo
+            {
+                height: 105px;
+                background-color:white;
+            }
+            .logo
+            {
+                padding-top: 5px;
+            }
+            .titleTop
+            {
+                padding-top: 25px;
+                color: #333333;
+            }
+            .dataHeaders
+            {
+                color: white;
+                font-weight: 5;
+                font-size: 20;
+                height: 50px;
+                text-align: center;
+                width: 100%;
+                background-color: #333333;
+                border-radius: 0px;
+                border: 0px #333333;
+                display: inline;
+            }
+            .dataHeadersSelected
+            {
+                color: white;
+                font-weight: 5;
+                font-size: 20;
+                height: 50px;
+                text-align: center;
+                width: 100%;
+                background-color: #333333;
+                border-radius: 0px;
+                border: 0px #333333;
+                display: inline;
+            }
+            .navi
+            {
+                background-color: #333333;
+                text-align: center;
+            }
+            .navis
+            {
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .dataHeaders:hover
+            {
+                color: lightblue;
+            }
+            .dataHeaders:active, .dataHeaders:focus, .dataHeadersSelected:active, .dataHeadersSelected:focus, .selected
+            {
+                background-color: lightskyblue;
+                color: #333333;
+                outline: none;
+                box-shadow: none;
+            }
+            .goal
+            {
+                padding-top: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 20px;
+                background: white;
+                width: 100%;
+                height: 100%;
+            }
+            .goal2
+            {
+                padding-top: 12.5px;
+                padding-left: 30px;
+                padding-right: 30px;
+                background: #bbbbbb;
+                color: #333333;
+                width: 100%;
+                height: 100%;
+            }
+            .goalBox
+            {
+                text-align: center;
+                color: #333333;
+                font-size: 20;
+                height: 175px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            .goalBox2
+            {
+                color: #333333;
+                font-size: 20;
+                height: 175px;
+                padding: 10px 0px 10px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+            .goalLine
+            {
+                width: 50%;
+            }
+            .breaker
+            {
+                height: 40px;
+            }
+            .parallax
+            {
+                background-image: url("{{url_for('static', filename='globe.jpg')}}");
+                min-height: 500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .icons
+            {
+                font-size: 40;
+            }
+            a:hover, a:visited, a:link, a:active
+            {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container-fluid topbar">
+            <div class = "container">
+                <a href="/">
+                    <img class = "logo" src="static/UNProgress.png">
+                </a>
+            </div>
+        </div>
+        <div class = "container-fluid parallax">
+
+        </div>
+
+        <div class = "container-fluid navi">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-lg navis">
+                        <a class="navL" href=goals>
+                        <button class = "btn dataHeaders">GOALS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=documents>
+                        <button class = "btn dataHeaders">DOCUMENTS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=milestones>
+                        <button class = "btn dataHeaders">MILESTONES</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=progress>
+                        <button class = "btn dataHeaders">PROGRESS</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=statements>
+                        <button class = "btn dataHeaders">100K TEST</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
+                        <a class="navL" href=more-info>
+                        <button class = "btn dataHeadersSelected selected">SEARCH</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-12 breaker">
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <h3>Search Function in 100K Randomly Generated Countries</h3>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <p>Search for a country numbered 1-100000</p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <form method="POST">
+                        <div class="form-group" style = "text-align: center;">
+                          <label for="countryNumber"></label>
+                          <input type="name" class="form-control" name="countryNumber" aria-describedby="info" placeholder="Enter country number">
+                        </div>
+                        <button style= "text-align:center; width:100%;" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class = "row">
+                <div class = "col-md-6" style="padding-top: 15px; padding-bottom: 15px;">
+                    <h5>AVL Tree Search:  {{ namey }}
+                    </h5>
+                    <h3>{{ countryT }}</h3>
+                </div>
+                <div class = "col-md-6" style="padding-top: 15px; padding-bottom: 15px;">
+                    <h5>Min Heap Search:
+                    </h5>
+                    <h3>{{ countryH }}</h3>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12 breaker">
+                </div>
+            </div>
+        </div>
+        <div class = "container-fluid navi" style="height: 100px;">
+            <div class = "container" style = "padding-left: 0px;">
+                <p style = "color: white; text-align: left; padding-top: 25px; margin-left: 0px; margin-bottom: 0px;">
+                    CREATED BY TEAM SWAGGER®
+                </p>
+                <p style = "color: rgb(170, 170, 170); text-align: left; margin-left: 0px; font-weight: 100;">
+                    2021
+                </p>
+            </div>
+        </div>
+    </body>
+</html> -->
+
 <html>
     <head>
         <title>UN Problems</title>
@@ -164,18 +404,18 @@
                         </a>
                     </div>
                     <div class = "col-lg navis">
-                        <a class="navL" href=statements>
-                        <button class = "btn dataHeaders">STATEMENTS</button>
-                        </a>
-                    </div>
-                    <div class = "col-lg navis">
                         <a class="navL" href=progress>
                         <button class = "btn dataHeaders">PROGRESS</button>
                         </a>
                     </div>
                     <div class = "col-lg navis">
+                        <a class="navL" href=statements>
+                        <button class = "btn dataHeaders">100K TEST</button>
+                        </a>
+                    </div>
+                    <div class = "col-lg navis">
                         <a class="navL" href=more-info>
-                        <button class = "btn dataHeadersSelected selected">MORE INFO</button>
+                        <button class = "btn dataHeadersSelected selected">SEARCH</button>
                         </a>
                     </div>
                 </div>
@@ -188,14 +428,49 @@
             </div>
             <div class = "row">
                 <div class = "col-md-12">
-                    <h3>More Info</h3>
+                    <h3>Search Function in 100K Randomly Generated Countries</h3>
                 </div>
             </div>
             <div class = "row">
-                <div class = "col-md-12" style="padding-top: 15px; padding-bottom: 15px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh cras pulvinar mattis nunc sed. Senectus et netus et malesuada fames. Faucibus a pellentesque sit amet porttitor eget. Sed id semper risus in. Varius sit amet mattis vulputate enim nulla aliquet. At imperdiet dui accumsan sit amet nulla facilisi. Justo laoreet sit amet cursus sit amet. Ullamcorper a lacus vestibulum sed arcu. Velit dignissim sodales ut eu. Sit amet dictum sit amet justo donec enim. Porttitor lacus luctus accumsan tortor. Varius duis at consectetur lorem. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Mi tempus imperdiet nulla malesuada pellentesque elit. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. At augue eget arcu dictum varius duis at consectetur. Id cursus metus aliquam eleifend mi in nulla posuere sollicitudin.
-                    Posuere sollicitudin aliquam ultrices sagittis. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Donec adipiscing tristique risus nec feugiat in. Rutrum quisque non tellus orci ac auctor augue. Nulla facilisi etiam dignissim diam quis. In dictum non consectetur a erat nam at lectus. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Amet nisl purus in mollis nunc. Amet massa vitae tortor condimentum lacinia quis. Eget mauris pharetra et ultrices neque ornare.
-                    Sagittis vitae et leo duis ut diam. Augue lacus viverra vitae congue eu consequat ac felis. Amet aliquam id diam maecenas ultricies. Vitae ultricies leo integer malesuada nunc. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Erat pellentesque adipiscing commodo elit at imperdiet dui. Diam phasellus vestibulum lorem sed. Sollicitudin tempor id eu nisl nunc mi ipsum. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Tincidunt augue interdum velit euismod in pellentesque. Nec dui nunc mattis enim ut. Blandit massa enim nec dui. Eget aliquet nibh praesent tristique magna sit. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Elementum integer enim neque volutpat. Est ullamcorper eget nulla facilisi etiam dignissim. Neque ornare aenean euismod elementum nisi quis eleifend quam. Quam viverra orci sagittis eu volutpat odio. Etiam sit amet nisl purus in. Auctor urna nunc id cursus metus aliquam eleifend mi.
+                <div class = "col-md-12">
+                    <p>Min Heap is popped until one country node is left. This is timed as the search time in min heap. In the AVL Tree, the same country node is searched for directly and timed. Here are the time comparisons</p>
+                </div>
+            </div>
+            <hr>
+            <div class = "row">
+                <div class = "col-md-6" style="padding-top: 15px; padding-bottom: 15px;">
+                    <h5>AVL Tree Search:
+                    </h5>
+                    <div style = "font-size: 10;">
+                        Function: popping all nodes off of min heap until the last one, that node will be searched in AVL Tree
+                    </div>
+                    <br>
+                        <p>Country searched for: {{ country }}</p>
+                        <br>
+                        <div style = "float:right; font-weight: 100; font-size: 20;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+                            </svg>
+                            <i>Time taken: {{ treeTime }}s   </i>
+                        </div>
+                </div>
+                <div class = "col-md-6" style="padding-top: 15px; padding-bottom: 15px;">
+                    <h5>Min Heap Search:
+                    </h5>
+                    <div style = "font-size: 10;">
+                        Function: popping all nodes off of min heap until the last one, that node will be searched in AVL Tree
+                    </div>
+                    <br>
+                        <p>Country searched for: {{ country }}</p>
+                        <br>
+                        <div style = "float:right; font-weight: 100; font-size: 20;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+                            </svg>
+                            <i>Time taken: {{ heapTime }}s   </i>
+                        </div>
                 </div>
             </div>
             <div class = "row">

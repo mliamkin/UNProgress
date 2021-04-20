@@ -1,0 +1,728 @@
+[
+ {
+   "Entity": "Afghanistan",
+   "Code": "AFG",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 34.3
+ },
+ {
+   "Entity": "Albania",
+   "Code": "ALB",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 12.2
+ },
+ {
+   "Entity": "Algeria",
+   "Code": "DZA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 9.4
+ },
+ {
+   "Entity": "Angola",
+   "Code": "AGO",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 29.5
+ },
+ {
+   "Entity": "Argentina",
+   "Code": "ARG",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 5.3
+ },
+ {
+   "Entity": "Armenia",
+   "Code": "ARM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 7.6
+ },
+ {
+   "Entity": "Azerbaijan",
+   "Code": "AZE",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 9.5
+ },
+ {
+   "Entity": "Bangladesh",
+   "Code": "BGD",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 26.1
+ },
+ {
+   "Entity": "Belarus",
+   "Code": "BLR",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Benin",
+   "Code": "BEN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 24.3
+ },
+ {
+   "Entity": "Bolivia",
+   "Code": "BOL",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 16.7
+ },
+ {
+   "Entity": "Bosnia and Herzegovina",
+   "Code": "BIH",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Botswana",
+   "Code": "BWA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 25.5
+ },
+ {
+   "Entity": "Brazil",
+   "Code": "BRA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 8.5
+ },
+ {
+   "Entity": "Bulgaria",
+   "Code": "BGR",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Burkina Faso",
+   "Code": "BFA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 27.7
+ },
+ {
+   "Entity": "Cambodia",
+   "Code": "KHM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 23.7
+ },
+ {
+   "Entity": "Cameroon",
+   "Code": "CMR",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 21.1
+ },
+ {
+   "Entity": "Central African Republic",
+   "Code": "CAF",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 53.7
+ },
+ {
+   "Entity": "Chad",
+   "Code": "TCD",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 45.4
+ },
+ {
+   "Entity": "Chile",
+   "Code": "CHL",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "China",
+   "Code": "CHN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 7.6
+ },
+ {
+   "Entity": "Colombia",
+   "Code": "COL",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 7.7
+ },
+ {
+   "Entity": "Comoros",
+   "Code": "COM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 30.8
+ },
+ {
+   "Entity": "Congo",
+   "Code": "COG",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 30.4
+ },
+ {
+   "Entity": "Costa Rica",
+   "Code": "CRI",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Cote d'Ivoire",
+   "Code": "CIV",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 25.9
+ },
+ {
+   "Entity": "Croatia",
+   "Code": "HRV",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Cuba",
+   "Code": "CUB",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Djibouti",
+   "Code": "DJI",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 30.1
+ },
+ {
+   "Entity": "Dominican Republic",
+   "Code": "DOM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 10.3
+ },
+ {
+   "Entity": "Ecuador",
+   "Code": "ECU",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 11.8
+ },
+ {
+   "Entity": "Egypt",
+   "Code": "EGY",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 14.8
+ },
+ {
+   "Entity": "El Salvador",
+   "Code": "SLV",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 10.1
+ },
+ {
+   "Entity": "Estonia",
+   "Code": "EST",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Eswatini",
+   "Code": "SWZ",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 22.5
+ },
+ {
+   "Entity": "Ethiopia",
+   "Code": "ETH",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 29.1
+ },
+ {
+   "Entity": "Fiji",
+   "Code": "FJI",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 9
+ },
+ {
+   "Entity": "Gabon",
+   "Code": "GAB",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 15.4
+ },
+ {
+   "Entity": "Gambia",
+   "Code": "GMB",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 22.3
+ },
+ {
+   "Entity": "Georgia",
+   "Code": "GEO",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 8.1
+ },
+ {
+   "Entity": "Ghana",
+   "Code": "GHA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 15.2
+ },
+ {
+   "Entity": "Guatemala",
+   "Code": "GTM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 20.8
+ },
+ {
+   "Entity": "Guinea",
+   "Code": "GIN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 28.9
+ },
+ {
+   "Entity": "Guinea-Bissau",
+   "Code": "GNB",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 29.1
+ },
+ {
+   "Entity": "Guyana",
+   "Code": "GUY",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 12.6
+ },
+ {
+   "Entity": "Haiti",
+   "Code": "HTI",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 35.4
+ },
+ {
+   "Entity": "Honduras",
+   "Code": "HND",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 14.4
+ },
+ {
+   "Entity": "India",
+   "Code": "IND",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 31.1
+ },
+ {
+   "Entity": "Indonesia",
+   "Code": "IDN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 21.9
+ },
+ {
+   "Entity": "Iran",
+   "Code": "IRN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 7.3
+ },
+ {
+   "Entity": "Iraq",
+   "Code": "IRQ",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 22.1
+ },
+ {
+   "Entity": "Jamaica",
+   "Code": "JAM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 8.6
+ },
+ {
+   "Entity": "Jordan",
+   "Code": "JOR",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 11.2
+ },
+ {
+   "Entity": "Kazakhstan",
+   "Code": "KAZ",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 5.5
+ },
+ {
+   "Entity": "Kenya",
+   "Code": "KEN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 23.2
+ },
+ {
+   "Entity": "Kuwait",
+   "Code": "KWT",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Kyrgyzstan",
+   "Code": "KGZ",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 9.3
+ },
+ {
+   "Entity": "Laos",
+   "Code": "LAO",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 25.3
+ },
+ {
+   "Entity": "Latvia",
+   "Code": "LVA",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Lebanon",
+   "Code": "LBN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 11.7
+ },
+ {
+   "Entity": "Lesotho",
+   "Code": "LSO",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 23.7
+ },
+ {
+   "Entity": "Liberia",
+   "Code": "LBR",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 33.3
+ },
+ {
+   "Entity": "Lithuania",
+   "Code": "LTU",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Madagascar",
+   "Code": "MDG",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 38
+ },
+ {
+   "Entity": "Malawi",
+   "Code": "MWI",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 26.5
+ },
+ {
+   "Entity": "Malaysia",
+   "Code": "MYS",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 13.3
+ },
+ {
+   "Entity": "Mali",
+   "Code": "MLI",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 27.8
+ },
+ {
+   "Entity": "Mauritania",
+   "Code": "MRT",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 27.3
+ },
+ {
+   "Entity": "Mauritius",
+   "Code": "MUS",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 11
+ },
+ {
+   "Entity": "Mexico",
+   "Code": "MEX",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 6.5
+ },
+ {
+   "Entity": "Moldova",
+   "Code": "MDA",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 9.2
+ },
+ {
+   "Entity": "Mongolia",
+   "Code": "MNG",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 12.6
+ },
+ {
+   "Entity": "Montenegro",
+   "Code": "MNE",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Morocco",
+   "Code": "MAR",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 10.4
+ },
+ {
+   "Entity": "Mozambique",
+   "Code": "MOZ",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 30.9
+ },
+ {
+   "Entity": "Myanmar",
+   "Code": "MMR",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 20.1
+ },
+ {
+   "Entity": "Namibia",
+   "Code": "NAM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 24.3
+ },
+ {
+   "Entity": "Nepal",
+   "Code": "NPL",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 21.2
+ },
+ {
+   "Entity": "Nicaragua",
+   "Code": "NIC",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 13.6
+ },
+ {
+   "Entity": "Niger",
+   "Code": "NER",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 30.4
+ },
+ {
+   "Entity": "Nigeria",
+   "Code": "NGA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 31.1
+ },
+ {
+   "Entity": "North Korea",
+   "Code": "PRK",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 34
+ },
+ {
+   "Entity": "North Macedonia",
+   "Code": "MKD",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 5.9
+ },
+ {
+   "Entity": "Oman",
+   "Code": "OMN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 10.8
+ },
+ {
+   "Entity": "Pakistan",
+   "Code": "PAK",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 32.6
+ },
+ {
+   "Entity": "Panama",
+   "Code": "PAN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 9.1
+ },
+ {
+   "Entity": "Papua New Guinea",
+   "Code": "PNG",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 29.7
+ },
+ {
+   "Entity": "Paraguay",
+   "Code": "PRY",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 8.5
+ },
+ {
+   "Entity": "Peru",
+   "Code": "PER",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 8.8
+ },
+ {
+   "Entity": "Philippines",
+   "Code": "PHL",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 20.2
+ },
+ {
+   "Entity": "Romania",
+   "Code": "ROU",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5.5
+ },
+ {
+   "Entity": "Russia",
+   "Code": "RUS",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 6.1
+ },
+ {
+   "Entity": "Rwanda",
+   "Code": "RWA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 28.7
+ },
+ {
+   "Entity": "Saudi Arabia",
+   "Code": "SAU",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 8.5
+ },
+ {
+   "Entity": "Senegal",
+   "Code": "SEN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 17.2
+ },
+ {
+   "Entity": "Serbia",
+   "Code": "SRB",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 6.5
+ },
+ {
+   "Entity": "Sierra Leone",
+   "Code": "SLE",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 35.7
+ },
+ {
+   "Entity": "Slovakia",
+   "Code": "SVK",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "South Africa",
+   "Code": "ZAF",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 14.5
+ },
+ {
+   "Entity": "Sri Lanka",
+   "Code": "LKA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 17.9
+ },
+ {
+   "Entity": "Sudan",
+   "Code": "SDN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 34.8
+ },
+ {
+   "Entity": "Suriname",
+   "Code": "SUR",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 10.2
+ },
+ {
+   "Entity": "Tajikistan",
+   "Code": "TJK",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 30
+ },
+ {
+   "Entity": "Tanzania",
+   "Code": "TZA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 29.5
+ },
+ {
+   "Entity": "Thailand",
+   "Code": "THA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 10.4
+ },
+ {
+   "Entity": "Timor",
+   "Code": "TLS",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 34.2
+ },
+ {
+   "Entity": "Togo",
+   "Code": "TGO",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 24.3
+ },
+ {
+   "Entity": "Trinidad and Tobago",
+   "Code": "TTO",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 8
+ },
+ {
+   "Entity": "Tunisia",
+   "Code": "TUN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 7.9
+ },
+ {
+   "Entity": "Turkey",
+   "Code": "TUR",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Turkmenistan",
+   "Code": "TKM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 12.2
+ },
+ {
+   "Entity": "Uganda",
+   "Code": "UGA",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 31.2
+ },
+ {
+   "Entity": "Ukraine",
+   "Code": "UKR",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5
+ },
+ {
+   "Entity": "Uruguay",
+   "Code": "URY",
+   "Year": 2016,
+   "Global Hunger Index (IFPRI (2016))": 5.6
+ },
+ {
+   "Entity": "Uzbekistan",
+   "Code": "UZB",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 12.1
+ },
+ {
+   "Entity": "Venezuela",
+   "Code": "VEN",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 11.4
+ },
+ {
+   "Entity": "Vietnam",
+   "Code": "VNM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 16
+ },
+ {
+   "Entity": "Yemen",
+   "Code": "YEM",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 39.7
+ },
+ {
+   "Entity": "Zambia",
+   "Code": "ZMB",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 37.6
+ },
+ {
+   "Entity": "Zimbabwe",
+   "Code": "ZWE",
+   "Year": 2018,
+   "Global Hunger Index (IFPRI (2016))": 32.9
+ }
+]
