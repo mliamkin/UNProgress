@@ -408,6 +408,7 @@ class maxHeap:
             self.heapify(0)        
         return pop
     
+    #Gets a list of data and names in heap
     def getHeapData(self):
         vectorFull = []
         vectorData = []
@@ -420,6 +421,7 @@ class maxHeap:
         vectorFull.append(vectorData)
         return vectorFull
 
+    #Searches for a name in a heap
     def search(self, name):
         ans = False
         while (self.size > 0 or ans == True):
@@ -428,11 +430,13 @@ class maxHeap:
             self.Pop()
         return ans
 
+#Country node part of the 100,000 nodes test
 class specialCountryNode:
     def __init__ (self, nameOfCountry, data):
         self.nameOfCountry = nameOfCountry
         self.data = data
 
+#Generates 100,000 country nodes with name and data
 def specialCountryGenerator():
     seed(time.ctime())
     specialCountryList = []    
@@ -454,6 +458,7 @@ def specialCountryGenerator():
 
 app = Flask(__name__)
 
+#initialize lists of heap data and tree data, as well as their times
 heapNames = []
 heapData = []
 
@@ -671,6 +676,7 @@ def getTrees():
     #Time for process
     treeTimes.append(str(round(end - start, 6)))
 
+#Creates the 100,000 country node test (creates tree and min-heap and times the creation for the top 10 list
 def specialStructures():
     fullList = []
     timeList = []
@@ -711,6 +717,7 @@ def specialStructures():
 
     return fullList
 
+#Creates tree and min-heap with 100,000 random country nodes and times their respective search functions
 def specialStructuresSearch():
     fullList = []
 
@@ -744,7 +751,7 @@ def specialStructuresSearch():
 
 
 
-
+#Links UN data API with goal data
 r = requests.get('https://unstats.un.org/SDGAPI/v1/sdg/Goal/List?includechildren=true')
 dataGoals = json.loads(r.text)
 
